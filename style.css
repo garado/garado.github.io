@@ -48,6 +48,12 @@ a:hover {
 	padding: 2%;
 }
 
+@media screen and (max-width: 800px) {
+  .bio {
+    width: 50%;
+  }
+}
+
 .contact-container {
 	padding: 2%;
 }
