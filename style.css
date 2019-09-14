@@ -27,25 +27,25 @@ a:hover {
 .frontpage {
 	display: flex;
 	flex-direction: column;
+	margin-top: 13vh;
 }
 
 .blurb-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	padding: 2%;
 }
 
 .profile img {
 	border-radius: 50%;
 	max-width: 25vh;
+	padding: 1%;
 }
 
 .bio {
 	font-size: 2.1vh;
-	max-width: 60vw;
-	padding: 2%;
+	max-width: 50vw;
+	padding: 1%;
 }
 
 @media screen and (max-width: 800px) {
@@ -55,7 +55,8 @@ a:hover {
 }
 
 .contact-container {
-	padding: 2%;
+	vertical-align: middle;
+	padding: 1%;
 }
 
 .contact-container h3 {
