@@ -1,7 +1,6 @@
 body {
 	background-color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
-	line-height: 1.6em;
 	text-align: center;
 }
 
@@ -15,16 +14,19 @@ a:hover {
 	color: lightgray;
 }
 
-.navbar, .navbar-brand {
+.navbar, .nav-item {
 	background-color: #ffffff !important;
-/*	font-size: 1.3em;
-	margin: 0.3em;*/
+	font-size: 2vh;
+}
+
+.navbar-brand, .navbar-toggler {
+	font-size: 3vh;
+	margin: 1vh;
 }
 
 .frontpage {
 	display: flex;
 	flex-direction: column;
-	margin-top: 5%;
 }
 
 .blurb-container {
@@ -32,17 +34,28 @@ a:hover {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 2%;
+	padding: 2%;
 }
 
 .profile img {
 	border-radius: 50%;
-	max-width: 200px;
-	height: auto;
+	max-width: 25vh;
 }
 
 .bio {
-	font-size: 1.2em;
-	margin-top: 2%;
-	width: 40rem;
+	font-size: 2.1vh;
+	max-width: 60vw;
+	padding: 2%;
+}
+
+.contact-container {
+	padding: 2%;
+}
+
+.contact-container h3 {
+	font-size: 3vh;
+}
+
+.contact-container a {
+	font-size: 2vh;
 }
