@@ -66,3 +66,21 @@ a:hover {
 .contact-container a {
 	font-size: 2vh;
 }
+
+.project-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: absolute;
+}
+
+.project-container img {
+	width: 450px;
+	height: 300px;
+	margin: 10px;
+	transition: all 0.8s;
+}
+
+.project-container img:hover {
+	opacity: 0.3;
+}
