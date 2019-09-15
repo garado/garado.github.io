@@ -85,3 +85,29 @@ a:hover {
 	opacity: 1;
 	background: rgba(0,0,0,0.5);
 }
+
+.card a {
+	color: white;
+}
+
+/*Project page*/
+.project-container {
+	display: inline-block;
+	justify-content: center;
+}
+
+/*Image carousel*/
+.carousel {
+	display: flex;
+}
+.carousel-cont {
+	display: inline-block;
+	height: 30vh;
+	width: 40vw;
+}
+
+.project-body {
+	columns: 2;
+	padding: 2%;
+	margin: 2%;
+}
