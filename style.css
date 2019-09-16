@@ -96,6 +96,17 @@ a:hover {
 	justify-content: center;
 }
 
+.project-header {
+	margin: 2%;
+}
+
+.project-body {
+	text-align: justify;
+	columns: 2;
+	padding: 2%;
+	margin: 2%;
+}
+
 /*Image carousel*/
 .carousel {
 	display: flex;
@@ -104,10 +115,4 @@ a:hover {
 	display: inline-block;
 	height: 30vh;
 	width: 40vw;
-}
-
-.project-body {
-	columns: 2;
-	padding: 2%;
-	margin: 2%;
 }
