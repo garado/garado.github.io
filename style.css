@@ -130,31 +130,27 @@ ul {
 	width: 95%;
 }
 
-
-
 .prog {
 	margin: 15px;
 }
 
 .components {
-	display: flex;
-	flex-wrap: column;
+	display: inline-block;
 	justify-content: space-around;
 	margin: 10px;
 }
 
-/* Mobile display */
 .project-body {
 	padding: 2%;
 	margin: 2%;
 	text-align: justify;
 }
 
-/* Smaller display: 1 column */
-/*@media screen and (max-width: 700px) {
+/* Larger displays: 1 column */
+@media screen and (min-width: 700px) {
   .project-body {
 
     padding: 2%;
     margin: 2%;
   }
-}*/
+}
