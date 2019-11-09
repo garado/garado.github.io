@@ -92,7 +92,7 @@ ul {
 
 
 /* Tiny screen: 1 card per row*/
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 750px) {
   .card {
     flex: 100%;
     max-width: 100%;
