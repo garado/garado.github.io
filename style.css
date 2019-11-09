@@ -126,9 +126,11 @@ ul {
 /* Mobile display */
 .carousel-cont {
 	display: inline-block;
-	height: 70%;
+	height: 95%;
 	width: 95%;
 }
+
+
 
 .prog {
 	margin: 15px;
