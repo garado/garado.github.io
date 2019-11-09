@@ -65,17 +65,39 @@ ul {
 	font-size: 2vh;
 }
 
-/*Project grid*/
+/****************
+ * PROJECT GRID
+ ****************/
 .project-grid {
-	display: inline-block;
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 
+/* Desktop view: 3 cards per row */
 .card {
-	width: 450px;
-	height: 300px;
-	border: none;
-	margin: 10px auto;
+	flex: 30%;
+	max-width: 30%;
+	margin: 5px;
+}
+
+/* Slightly smaller screen: 2 cards per row */
+@media screen and (max-width: 800px) {
+  .card {
+    flex: 45%;
+    max-width: 45%;
+    margin: 5px;
+  }
+}
+
+
+/* Tiny screen: 1 card per row*/
+@media screen and (max-width: 600px) {
+  .card {
+    flex: 100%;
+    max-width: 100%;
+    margin: 5px;
+  }
 }
 
 .card-title {
@@ -98,21 +120,6 @@ ul {
 	color: white;
 }
 
-/****************
- * PROJECT GRID
- ****************/
-.project-container {
-	display: inline-block;
-	justify-content: center;
-}
-
-.project-body {
-	text-align: justify;
-	columns: 2;
-	padding: 2%;
-	margin: 2%;
-}
-
 /********************
  * PROJECT SUBPAGES
  ********************/
@@ -123,7 +130,7 @@ ul {
 }
 
 .prog {
-	margin: 10px;
+	margin: 15px;
 }
 
 .components {
@@ -131,4 +138,11 @@ ul {
 	flex-wrap: column;
 	justify-content: space-around;
 	margin: 10px;
+}
+
+.project-body {
+	text-align: justify;
+	columns: 2;
+	padding: 2%;
+	margin: 2%;
 }
