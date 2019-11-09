@@ -62,9 +62,6 @@ ul {
 .contact-container {
 	vertical-align: middle;
 	padding: 1%;
-}
-
-.contact-link {
 	font-size: 2vh;
 }
 
@@ -125,9 +122,13 @@ ul {
 	width: 50vw;
 }
 
+.prog {
+	margin: 10px;
+}
+
 .components {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: column;
 	justify-content: space-around;
 	margin: 10px;
 }
