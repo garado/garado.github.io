@@ -123,10 +123,11 @@ ul {
 /********************
  * PROJECT SUBPAGES
  ********************/
+/* Mobile display */
 .carousel-cont {
 	display: inline-block;
-	height: 30vh;
-	width: 50vw;
+	height: 70%;
+	width: 95%;
 }
 
 .prog {
@@ -140,19 +141,18 @@ ul {
 	margin: 10px;
 }
 
-/* Normal display: 2 columns */
+/* Mobile display */
 .project-body {
-	columns: 2;
 	padding: 2%;
 	margin: 2%;
 	text-align: justify;
 }
 
 /* Smaller display: 1 column */
-@media screen and (max-width: 700px) {
+/*@media screen and (max-width: 700px) {
   .project-body {
 
     padding: 2%;
     margin: 2%;
   }
-}
+}*/
