@@ -14,6 +14,11 @@ a:hover {
 	color: lightgray;
 }
 
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
 .navbar, .nav-item {
 	background-color: #ffffff !important;
 	font-size: 2vh;
@@ -96,18 +101,12 @@ a:hover {
 	color: white;
 }
 
-.currentproject {
-	margin-bottom: 30px;
-}
-
-/*Project page*/
+/****************
+ * PROJECT GRID
+ ****************/
 .project-container {
 	display: inline-block;
 	justify-content: center;
-}
-
-.project-header {
-	margin: 2%;
 }
 
 .project-body {
@@ -117,12 +116,18 @@ a:hover {
 	margin: 2%;
 }
 
-/*Image carousel*/
-.carousel {
-	display: flex;
-}
+/********************
+ * PROJECT SUBPAGES
+ ********************/
 .carousel-cont {
 	display: inline-block;
 	height: 30vh;
-	width: 40vw;
+	width: 50vw;
+}
+
+.components {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 10px;
 }
