@@ -76,9 +76,15 @@ a:hover {
 	margin: 10px auto;
 }
 
+.card-title {
+	justify-content: center;
+	vertical-align: center;
+}
+
 .ovl {
 	opacity: 0;
 	transition: all 0.4s;
+	vertical-align: center;
 }
 
 .ovl:hover {
@@ -88,6 +94,10 @@ a:hover {
 
 .card a {
 	color: white;
+}
+
+.currentproject {
+	margin-bottom: 30px;
 }
 
 /*Project page*/
