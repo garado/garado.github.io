@@ -4,6 +4,15 @@ body {
 	text-align: center;
 }
 
+img {
+	opacity: 1;
+	transition: opacity 0.4s;
+}
+
+img[data-src] {
+	opacity: 0;
+}
+
 a {
 	color: black;
 	transition: all 0.2s;
@@ -79,6 +88,7 @@ ul {
 	flex: 30%;
 	max-width: 30%;
 	margin: 5px;
+	border: none;
 }
 
 /* Slightly smaller screen: 2 cards per row */
@@ -164,7 +174,11 @@ ul {
 	}
 
 	.carousel-cont {
-		width: 30vw !important;
+		width: 33vw !important;
+	}
+
+	.features {
+		margin: 10px;
 	}
 
 	.components {
