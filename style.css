@@ -14,18 +14,43 @@ img[data-src] {
 }
 
 a {
-	color: black;
+	color: #cc6f56 !important;
 	transition: all 0.2s;
 }
 
 a:hover {
 	text-decoration: none;
-	color: lightgray;
+	color: #ededed !important;
 }
 
 ul {
 	list-style-type: none;
 	padding: 0;
+}
+
+
+/**************
+ * ABOUT PAGE
+ **************/
+.about-box {
+	height: 80vh;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: justify-all;
+}
+
+.about-content {
+	width: 90vw;
+}
+
+@media screen and (min-width: 800px) {
+  .about-content {
+    width: 65vw;
+  }
 }
 
 .navbar, .nav-item {
@@ -127,7 +152,7 @@ ul {
 }
 
 .card a {
-	color: white;
+	color: white !important;
 }
 
 /********************
