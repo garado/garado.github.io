@@ -135,7 +135,7 @@ ul {
 }
 
 .components {
-	display: inline-block;
+	display: flex;
 	justify-content: space-around;
 	margin: 10px;
 }
@@ -146,11 +146,34 @@ ul {
 	text-align: justify;
 }
 
-/* Larger displays: 1 column */
-@media screen and (min-width: 700px) {
-  .project-body {
+/* Larger displays*/
+@media screen and (min-width: 900px) {
+	.project-box {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
 
-    padding: 2%;
-    margin: 2%;
-  }
+	.p-box1 {
+		padding: 10px;
+	}
+
+	.p-box2 {
+		width: 45%;
+	}
+
+	.carousel-cont {
+		width: 30vw !important;
+	}
+
+	.components {
+		display: inline-block;
+	}
+
+	.project-body {
+		columns: 2;
+		padding: 2%;
+		margin: 2%;
+	}
 }
