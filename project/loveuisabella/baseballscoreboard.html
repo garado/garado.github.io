@@ -78,7 +78,7 @@
 			<div class="prog">
 				<h5>PROGRESS</h5>
 				<div class="progress">
-					<div class="progress-bar bg-danger progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+					<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
 				</div>
 			</div>
 		
@@ -87,7 +87,7 @@
 		<div class="p-box2">
 
 			<div class="features">
-				<h3>Planned Features</h3>
+				<h4>Planned Features</h4>
 				<ul>
 					<li>Live-updating game stats</li>
 					<li>Countdown til next Red Sox game</li>
@@ -98,15 +98,15 @@
 
 			<div class="components">
 				<div>
-					<h3>Components</h3>
+					<h4>Components</h4>
 					<h5><u>HARDWARE</u></h5>
 					<ul>
 						<li><a href="https://www.aliexpress.com/item/32754158226.html?spm=a2g0o.productlist.0.0.169d1afbLhP6iv&s=p&algo_pvid=a8f75763-011c-4e7d-91bc-5906ed33c40b&algo_expid=a8f75763-011c-4e7d-91bc-5906ed33c40b-4&btsid=86752234-f5f8-43b6-a044-2d96bd4aa85a&ws_ab_test=searchweb0_0,searchweb201602_6,searchweb201603_55" target="blank_">64x32 RGB LED matrix</a></li>
 						<li><a href="https://www.raspberrypi.org/products/raspberry-pi-zero-w/" target="blank_">Raspberry Pi Zero W</a></li>
 					</ul>
-					<h5><u>SOFTWARE</u></h5>
+					<h5><u>SOFTWARE / ONLINE SERVICES</u></h5>
 					<ul>
-						<li>MLB API</li>
+						<li><a href="https://appac.github.io/mlb-data-api-docs/#top" target="_blank">MLB API</a></li>
 					</ul>
 				</div>
 			</div>
@@ -116,8 +116,30 @@
 
 	<!-- Project body text -->
 	<div class="project-body">
-		<strong>PLAY BALL!</strong>
-		<p>This is a project for one of my friends who's obsessed with the Red Sox.</p>
+		<strong>9 NOV 2019: PLAY BALL!</strong>
+		<p>This project is a birthday present for one of my friends who's obsessed with the Red Sox. The goal is to build a scoreboard that updates according to the game's score/stats in real time and displays a countdown til the next Red Sox game if a game isn't currently happening. I also plan on adding more fun stuff, like lots of custom animations and scrolling messages.</p>
+		<p>I'm very excited for this project! It'll be a great learning experience for me. I have exactly zero experience with the components that this project requires, which just makes it more fun.</p>
+
+		<p>Here's a brief outline of the steps for this project:</p>
+		<ol>
+			<strong><li>Order parts</li></strong>
+			<p>The prices aren't too bad. The matrix is about $20 and the Raspberry Pi Zero W is $10 (or $5 if Adafruit ever gets them back in stock). I'll probably need to spend a little extra when I get to building the casing, but it'll probably come out to $40 max.</p>
+			
+			<strong><li>Figure out how to collect data from MLB API while I wait for parts</li></strong>
+			<p>I don't know actually know what an API is, so this step might be a little difficult down the line. I've been poking around Google and I found <a href="https://appac.github.io/mlb-data-api-docs/#top" target="_blank"><u>this</u></a> thing, which looks useful but also only appears to have team/player statistics and not actual game scores, so I'll definitely have to do more digging.</p>
+
+			<strong><li>Connect Pi to WiFi</li></strong>
+			<p>This should be easy in theory. However, my friend is going to be using this at school, and our university has WiFi that you can't connect to as easily as you do with private WiFi networks at home.</p>
+
+			<strong><li>Connect Pi to LED matrix</li></strong>
+			<p>A little concerned for this step because it's going to require some soldering! I've soldered approximately once in my entire life and that went okay, so I hope this turns out okay too. The biggest thing is that I don't have a soldering iron at home. I might have to ask around and hope someone's got one.</p>
+
+			<strong><li>Make LED matrix display what I want it to</li></strong>
+			<p>I literally have no idea how difficult this is going to be but it'll likely be the hardest step, especially with all that fun custom stuff I plan on putting in. We'll get there when we get there.</p>
+
+			<strong><li>Make the casing</li></strong>
+			<p>I may be vastly underestimating this, but the casing should in theory just be wood, glue, paint, and some very accurate measurements.</p>
+		</ol>
 	</div>
 
 	<!-- Bootstrap Javascript stuff -->

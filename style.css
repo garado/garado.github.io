@@ -186,7 +186,9 @@ ul {
 	}
 
 	.project-body {
-		columns: 2;
+		display: inline-block;
+		justify-content: center;
+		width: 70vw;
 		padding: 2%;
 		margin: 2%;
 	}
