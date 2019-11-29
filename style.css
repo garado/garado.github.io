@@ -14,13 +14,13 @@ img[data-src] {
 }
 
 a {
-	color: #cc6f56 !important;
+	color: #cc6f56;
 	transition: all 0.2s;
 }
 
 a:hover {
 	text-decoration: none;
-	color: #ededed !important;
+	color: #ededed;
 }
 
 ul {
