@@ -1,0 +1,7 @@
+29 NOV 2019
+A few days ago I received the Raspberry Pi Zero W in the mail! I'm currently waiting on the actual LED matrix to arrive.
+
+Looks like I'm teaching myself Python.
+https://github.com/panzarino/mlbgame
+
+While I'm waiting for my 
