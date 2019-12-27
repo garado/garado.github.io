@@ -100,59 +100,85 @@ ul {
 }
 
 /****************
- * PROJECT GRID
+ * PROJECT PAGE
  ****************/
-.project-grid {
+#all-projects-box {
+	display: inline-block;
+	height: auto;
+	width: 80%;
+}
+
+.project-box {
+	background-color: #ededed;
+	margin: 10px;
+}
+
+.project-img {
+	overflow: hidden;
+	width: 50%;
+	height: auto;
+}
+
+.project-desc {
+	/*background-color: orange;*/
+	width: 50%;
+	height: auto;
+	padding: 15px;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-direction: column;
+	align-content: space-between !important
+ } 
+
+.project-desc h1 {
+	font-size: 2.5vw;
+	margin: 4px;
 }
 
-/* Desktop view: 3 cards per row */
-.card {
-	flex: 30%;
-	max-width: 30%;
-	margin: 5px;
-	border: none;
+.project-desc p {
+	font-size: 1vw;
+	margin: 4px;
 }
 
-/* Slightly smaller screen: 2 cards per row */
-@media screen and (max-width: 800px) {
-  .card {
-    flex: 45%;
-    max-width: 45%;
-    margin: 5px;
-  }
+.project-logo {
+	height: auto;
+	width: 2vw;
+	margin: 4px;
 }
 
+@media screen and (max-width: 900px) {
+	#all-projects-box {
+		display: inline-block;
+		height: 40em;
+		width: 90%;
+	}
 
-/* Tiny screen: 1 card per row*/
-@media screen and (max-width: 750px) {
-  .card {
-    flex: 100%;
-    max-width: 100%;
-    margin: 5px;
-  }
-}
+	.project-box {
+		display: flex;
+		flex-direction: column;	
+		margin: 10px;
+	}
 
-.card-title {
-	justify-content: center;
-	vertical-align: center;
-}
+	.project-img {
+		width: 100%;
+		height: auto;
+	}
 
-.ovl {
-	opacity: 0;
-	transition: all 0.4s;
-	vertical-align: center;
-}
+	.project-desc {
+		width: 100%;
+	}
 
-.ovl:hover {
-	opacity: 1;
-	background: rgba(0,0,0,0.5);
-}
+	.project-desc h1 {
+		font-size: 4vh;
+	}
 
-.card a {
-	color: white !important;
+	.project-desc p {
+		font-size: 2vh;
+	}
+
+	.project-logo {
+		height: 4vh;
+		width: auto;
+	}
 }
 
 /********************
