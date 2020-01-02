@@ -1,0 +1,19 @@
+body {
+
+}
+
+#intro-container {
+	background-color: gray;
+}
+
+#contact-container {
+	background-color: blue;
+}
+
+#about-container {
+	background-color: yellow;
+}
+
+#project-container {
+	background-color: red;
+}
