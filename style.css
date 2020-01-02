@@ -161,9 +161,11 @@ ul {
 	.project-img {
 		width: 100%;
 		height: auto;
+		order: 0;
 	}
 
 	.project-desc {
+		order: 1;
 		width: 100%;
 	}
 
