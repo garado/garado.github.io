@@ -1,0 +1,73 @@
+body {
+	text-align: center !important;
+}
+
+h1 {
+
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: middle;
+}
+
+#intro-container {
+	background-color: gray;
+	margin: 5px 0px;
+}
+
+#intro-info-container {
+	background-color: yellow;
+}
+
+.profile-img {
+	height: auto;
+	min-width: 20vw;
+	max-width: 20vw;
+	border-radius: 50%;
+}
+
+#intro-contact-container {
+	background-color: blue;
+	margin: 5px 0px;
+}
+
+#about-container {
+	background-color: yellow;
+	margin: 5px 0px;
+}
+
+#project-container {
+	background-color: red;
+	margin: 5px 0px;
+}
+
+@media screen and (max-width: 900px) {
+	h1 {
+		font-size: 2.5rem !important;
+	}
+
+	#intro-container {
+
+	}
+
+	#intro-info-container {
+		height: auto;
+	}
+
+	.profile-img {
+		height: auto;
+		max-width: 45vw;
+	}
+
+	#contact-container {
+	}
+
+	#about-container {
+	}
+
+	#project-container {
+	}
+}
