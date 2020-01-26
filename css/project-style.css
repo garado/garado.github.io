@@ -1,0 +1,10 @@
+.body {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-container {
+    background-color: #1B1919;
+}
