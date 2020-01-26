@@ -5,15 +5,16 @@
 	<link rel="stylesheet" type="text/css" href="style2.css">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
-	<nav class="navbar navbar-expand-lg navbar-light">
-	  <a class="navbar-brand" href="#">Navbar</a>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+	  <a class="navbar-brand" href="#">Gia Alexis Garado</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 	    <div class="navbar-nav">
 	      <a class="nav-item nav-link" href="#">Home</a>
 	      <a class="nav-item nav-link" href="#">About</a>
@@ -22,19 +23,20 @@
 	  </div>
 	</nav>
 
-
-	<div id="intro-container">
-		<h1>Hello there!</h1>
-		<p>I'm Gia Alexis Garado, an undergraduate at the University of California: Santa Cruz studying Computer Engineering and Computer Science.</p>
-
-		<div id="contact-container">
+	<div id="intro-container" class="flex">
+		<div id="intro-info-container">
+			<h1>Hello there!</h1>
+			<img class="profile-img" src="img/profile2.jpg">
+			<p>I'm Gia Alexis Garado, an undergraduate at the University of California: Santa Cruz studying Computer Engineering and Computer Science.</p>
+		</div>
+		<div id="intro-contact-container">
 		</div>
 
 	</div>
 
 	<div id="about-container">
 		<p>
-			I'm Alexis, an endlessly curious junior engineer with a passion for developing technology for social good and an eye for detail and design. I want to build effective and elegant solutions to the world's problems.
+			I'm an endlessly curious junior engineer with a passion for developing technology for social good and an eye for detail and design. I want to build effective and elegant solutions to the world's problems.
 
 			I'm especially interested in embedded systems, software engineering, and aerospace engineering.
 
@@ -43,7 +45,7 @@
 	</div>
 
 	<div id="project-container">
-		<p>projects!</p>
+		<p>Projects!</p>
 	</div>
 
 	<!-- Bootstrap Javascript stuff -->

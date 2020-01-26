@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Home</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" href="img/icon.PNG">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-	  <p class="navbar-brand">Gia Alexis Garado</p>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-	    <div class="navbar-nav">
-	      <a class="nav-item nav-link active" href="index.html">HOME</a>
-	      <a class="nav-item nav-link" href="about.html">ABOUT</a>
-	      <a class="nav-item nav-link" href="projects.html">PROJECTS</a>
-	      <a class="nav-item nav-link" href="resume.pdf" target="_blank">RESUME</a>
-	    </div>
-	  </div>
-	</nav>
+    <head>
+        <title>Gia Alexis Garado</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="frontpage-container">
+            <div class="intro-container">
+                <h1>Gia Alexis Garado</h1>
+                <p>
+                    Hello there! I'm an undergraduate at the University of California, Santa Cruz studying computer engineering and computer science.
+                    I'm an endlessly curious junior engineer with a passion for developing technology for social good and an eye for detail and design.
+                    I want to build effective and elegant solutions to the world's problems.
+                </p>
 
-	<div class="frontpage">
-		<!-- Picture and mini-bio -->
-		<div class="blurb-container">
-			<div class="profile">
-				<img src="img/profile2.jpg">
-			</div>
-			<div class="bio">
-				<p>
-					I'm Gia Alexis Garado, an undergraduate at the University of California: Santa Cruz studying Computer Engineering and Computer Science.
-				</p>
-			</div>
-		</div>
+                <p>
+                    I work as a tutor through the university, teaching students concepts related to computer architecture and computer hardware + software.
+                </p>
 
-		<!-- Get in touch! -->
-		<div class="contact-container">
-			<h3 style="font-size: 3vh">Get in touch!</h3>
-			<a href="">gmail</a><br>
-			<a target="_blank" href="https://github.com/garado">github</a><br>
-			<a target="_blank" href="https://linkedin.com/in/garado">linkedin</a><br>
-		</div>
-	</div>
+                <p>
+                    I'm currently searching for an embedded systems internship for this summer.
+                </p>
+            </div>          
 
-	<!-- Bootstrap Javascript stuff -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+            <div class="project-container">
+                <h2 class="project-container-title">Cool things I'm working on</h2>
+
+                <div class="project-grid">
+                    <div class="row">
+                        <div class="column">
+                            <div class="content">
+                                <div class="overlay"></div>
+                                <img class="overlay-image" src="img/ewbucsc.png" alt="Engineers Without Borders">
+                                <div class="overlay-details fadeIn-bottom">
+                                    <div class="overlay-title">Engineers Without Borders</div>
+                                    <div class="overlay-description">Bringing renewable energy to underserved communities</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="content">
+                                <div class="overlay"></div>
+                                <img class="overlay-image" src="img/tech4good.png" alt="Tech4Good Lab">
+                                <div class="overlay-details fadeIn-bottom">
+                                    <div class="overlay-title">Tech4Good Lab</div>
+                                    <div class="overlay-description">UI/UX designer</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="content">
+                                <div class="overlay"></div>
+                                <img class="image" src="img/formulaonetenth.HEIC" alt="Formula 1/10th">
+                                <div class="overlay-details fadeIn-bottom">
+                                    <div class="overlay-title">Formula 1/10th</div>
+                                    <div class="overlay-description">Autonomous racing</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+    </body>
 </html>
