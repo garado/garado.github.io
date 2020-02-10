@@ -8,6 +8,16 @@ body {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: #60646b;
+    transition: all 0.5s;
+}
+
+a:hover {
+    color: white;
+}
+
 p {
     font-family: 'Open Sans', serif;
     line-height: 25px;
