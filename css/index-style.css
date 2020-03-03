@@ -117,8 +117,6 @@ p {
 .content .overlay {
     background: rgba(0,0,0,0.7);
     position: absolute;
-    /* height: 100%;
-    width: 100%; */
     left: 0;
     top: 0;
     bottom: 0;
@@ -158,10 +156,15 @@ p {
     text-transform: uppercase;
     font-size: 22px;
     font-style: bold;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3px;
 }
 
 .overlay-description {
     font-family: 'Open Sans', serif;
+    width: 80%;
+    margin: auto;
 }
 
 .content:hover .overlay-details{
