@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    font-family: 'Spectral';
+}
+
+nav {
+    position: sticky;
+    width: 100%;
+    height: 100%;
+    top: 2em;
+    left: 0;
+}
+
+nav a {
+    margin: 0 0.5em;
+    color: black;
+}
+
+nav a:hover {
+    margin: 0px 15px 0px 15px;
+    color: #8b0000;
+}
+
+a {
+    text-decoration: none;
+    color:#8b0000;
+    transition: all 0.2s;
+}
+
+a:hover {
+    color: rgba(167, 167, 167, 1);
+}
+
+/* FADING */
+.fadeDefault {
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-in 0.2s;
+}
+
+.fade {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.section-header {
+    letter-spacing: 3px;
+}
+
+#profile {
+    /* position: absolute; */
+    height: 100vh;
+    align-items: center;
+}
+
+.profile-pic {
+    border-radius: 100%;
+    max-width: 20%;
+}
+
+#about {
+    max-width: 60%;
+}
+
+#projects {
+    max-width: 60%;
+}
+
+.projects-content {
+
+}
