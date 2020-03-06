@@ -3,9 +3,7 @@ function fadeProfileElements() {
     var fadeProfile = document.getElementsByClassName("fade1");
     var fadeProfileLimit = fadeProfile.length;
     var fadeProfileInterval = setInterval(function() {
-        console.log("i is " + i + "limit is " + fadeProfileLimit);
-        if (i > (fadeProfileLimit - 1)) {
-            console.log("null");
+        if (i > (fadeProfileLimit - 2)) {
             clearInterval(fadeProfileInterval);
         }
         fadeProfile[i].classList.toggle("fade");
@@ -18,9 +16,7 @@ function fadeNavbarElements() {
     var fadeProfile = document.getElementsByClassName("fade2");
     var fadeProfileLimit = fadeProfile.length;
     var fadeProfileInterval = setInterval(function() {
-        console.log("i is " + i + "limit is " + fadeProfileLimit);
-        if (i > (fadeProfileLimit - 1)) {
-            console.log("null");
+        if (i > (fadeProfileLimit - 2)) {
             clearInterval(fadeProfileInterval);
         }
         fadeProfile[i].classList.toggle("fade");
