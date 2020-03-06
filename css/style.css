@@ -121,6 +121,17 @@ a:hover {
     height: 1.6em;
 }
 
+/* PROJECTS */
+#projects {
+    width: 75%;
+    margin: auto;
+}
+
+.project-content {
+    width: 50%;
+    margin: auto;
+}
+
 #resume {
     width: 60%;
 }
