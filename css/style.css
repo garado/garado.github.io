@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -10,7 +11,8 @@ body {
     justify-content: center;
     text-align: center;
     margin: auto;
-    font-family: 'Spectral';
+    font-family: 'Lato';
+    line-height: 2em;
 }
 
 nav {
@@ -58,11 +60,31 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
+}
+
+.section {
+    margin: 2em auto;
+}
+
+.font-spectral {
+    font-family: 'Spectral';
 }
 
 .section-header {
-    letter-spacing: 3px;
+    font-family: 'Spectral';
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.section-content {
+    max-width: 60%;
+    margin: auto;
+}
+
+#resume {
+    width: 60%;
 }
 
 #profile {
@@ -76,14 +98,6 @@ a:hover {
     max-width: 20%;
 }
 
-#about {
-    max-width: 60%;
-}
-
-#projects {
-    max-width: 60%;
-}
-
-.projects-content {
+footer {
 
 }
