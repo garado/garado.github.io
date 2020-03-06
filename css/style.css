@@ -43,6 +43,18 @@ a:hover {
     color: rgba(167, 167, 167, 1);
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* margin: 0 auto; */
+}
+
+.font-spectral {
+    font-family: 'Spectral';
+}
+
 /* FADING */
 .fadeDefault {
     opacity: 0;
@@ -55,20 +67,8 @@ a:hover {
     visibility: visible !important;
 }
 
-.flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-}
-
 .section {
     margin: 2em auto;
-}
-
-.font-spectral {
-    font-family: 'Spectral';
 }
 
 .section-header {
@@ -83,17 +83,44 @@ a:hover {
     margin: auto;
 }
 
-#resume {
-    width: 60%;
+/* PROFILE */
+#profile {
+    height: 100vh;
+    top: 0;
+    margin: auto;
+    align-items: center;
 }
 
-#profile {
-    /* position: absolute; */
-    height: 100vh;
-    align-items: center;
+.profile-name {
+    margin-bottom: 0;
 }
 
 .profile-pic {
     border-radius: 100%;
     max-width: 20%;
+}
+
+.profile-social {
+    margin-top: 0;
+    height: 2em;
+}
+
+.profile-description {
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-social img {
+    height: 1.5em;
+    width: auto;
+    margin: auto 0.5em;
+}
+
+.profile-social img:hover {
+    height: 1.6em;
+}
+
+#resume {
+    width: 60%;
 }
