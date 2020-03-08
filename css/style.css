@@ -68,8 +68,7 @@ a:hover {
 }
 
 .section {
-    margin: auto auto;
-    height: 40vh;
+    margin: 10vh auto;
 }
 
 .section-header {
@@ -87,8 +86,8 @@ a:hover {
 /* PROFILE */
 #profile {
     height: 100vh;
-    top: 0;
-    margin: auto;
+    top: 0 !important; /*???*/
+    margin: 0 auto;
     align-items: center;
 }
 
