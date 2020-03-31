@@ -225,11 +225,13 @@ a:hover {
 }
 
 .proj-info-title {
-    margin-bottom: -0.5em;
+    margin-bottom: -0.15em;
+    /* text-decoration: underline; */
 }
 
 .proj-info-desc {
     font-size: 0.8em;
+    line-height: 1.5em;
 }
 
 .proj-img {
