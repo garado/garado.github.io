@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Spectral&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -13,10 +12,14 @@ body {
     margin: auto;
     font-family: 'Lato';
     line-height: 2em;
+    font-size: 20px;
+    color: #2E2E2E;
+    background-color: #F2F2F2;
 }
 
 nav {
     position: sticky;
+    z-index: 100;
     width: 100%;
     height: 100%;
     top: 2em;
@@ -25,7 +28,7 @@ nav {
 
 nav a {
     margin: 0 0.5em;
-    color: black;
+    color: #2E2E2E;
 }
 
 nav a:hover {
@@ -51,10 +54,6 @@ a:hover {
     /* margin: 0 auto; */
 }
 
-.font-spectral {
-    font-family: 'Spectral';
-}
-
 /* FADING */
 .fadeDefault {
     opacity: 0;
@@ -72,27 +71,43 @@ a:hover {
 }
 
 .section-header {
-    font-family: 'Spectral';
-    font-weight: normal;
-    letter-spacing: 2px;
-    margin: auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #8b0000;
 }
 
 .section-content {
     max-width: 60%;
     margin: auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 36px;
+    text-transform: none;
+    color: #2E2E2E;
 }
 
 /* PROFILE */
 #profile {
     height: 100vh;
-    top: 0 !important; /*???*/
+    top: 0;
     margin: 0 auto;
     align-items: center;
 }
 
 .profile-name {
     margin-bottom: 0;
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    /* line-height: 58px; */
+    text-transform: uppercase;
 }
 
 .profile-pic {
@@ -103,6 +118,7 @@ a:hover {
 .profile-social {
     margin-top: 0;
     height: 2em;
+    align-items: center;
 }
 
 .profile-description {
@@ -123,15 +139,61 @@ a:hover {
 
 /* PROJECTS */
 #projects {
-    width: 75%;
+    width: 85%;
     margin: auto;
 }
 
 .project-content {
-    width: 50%;
+    width: 80% !important;
     margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
+.project-box {
+    position: relative;
+    width: 300px;
+    margin: 0.5em;
+}
+
+.project-box:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255,255, 255, 0.6);
+    border-radius: 3%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project-overlay-text {
+    color: black;
+    font-size: 1.5em;
+}
+
+.project-img {
+    height: 300px;
+    width: 300px;
+    border-radius: 3%;
+    display: block;
+}
+
+/* RESUME */
 #resume {
     width: 60%;
 }
