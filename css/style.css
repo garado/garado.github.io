@@ -67,7 +67,7 @@ a:hover {
 }
 
 .section {
-    margin: 10vh auto;
+    margin: 8vh auto;
 }
 
 .section-header {
@@ -175,16 +175,22 @@ a:hover {
     transition: .5s ease;
     background-color: rgba(255,255, 255, 0.6);
     border-radius: 3%;
-    display: flex;
     margin: auto;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .project-overlay-text {
-    color: black;
+    padding: 3px;
     font-size: 1.5em;
+    line-height: 1.3em;
+    text-transform: uppercase;
+}
+
+.project-overlay-subtext {
+
 }
 
 .project-img {
