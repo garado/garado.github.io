@@ -177,20 +177,26 @@ a:hover {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(255,255, 255, 0.6);
+    background-color: rgba(39, 39, 39, 0.6);
     border-radius: 3%;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #F2F2F2;
     align-items: center;
 }
 
 .project-overlay-text {
-    padding: 3px;
-    font-size: 1.5em;
-    line-height: 1.3em;
+    padding: 1px;
+    font-size: 1.4em;
+    line-height: 1.25em;
     text-transform: uppercase;
+}
+
+.project-overlay-subtext {
+    padding: 1px;
+    line-height: 1em;
 }
 
 .project-img {
