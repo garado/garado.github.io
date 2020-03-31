@@ -226,7 +226,7 @@ a:hover {
 
 .proj-info-title {
     margin-bottom: -0.15em;
-    /* text-decoration: underline; */
+    text-transform: uppercase;
 }
 
 .proj-info-desc {
