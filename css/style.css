@@ -102,6 +102,14 @@ a:hover {
     .section-header {
         font-size: 50px;
     }
+
+    .section-subheader {
+        
+    }
+
+    .section-content {
+        max-width: 90%;
+    }
 }
 
 
