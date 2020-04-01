@@ -67,6 +67,7 @@ a:hover {
     visibility: visible !important;
 }
 
+/* SECTIONS */
 .section {
     margin: 8vh auto;
 }
@@ -96,6 +97,14 @@ a:hover {
     line-height: 36px;
     color: #2E2E2E;
 }
+
+@media only screen and (max-width: 600px) {
+    .section {
+        margin: 0;
+        justify-content: left;
+    }
+}
+
 
 
 
@@ -146,56 +155,6 @@ a:hover {
 .profile-social img:hover {
     height: 1.75em;
 }
-
-
-@media only screen and (max-width: 600px) {
-    #profile-section {
-        height: 100vh;
-        top: 0;
-        margin: 0 auto;
-        align-items: center;
-    }
-    
-    .profile-name {
-        margin-bottom: 0;
-        letter-spacing: 2px;
-        font-size: 40px;
-        font-weight: 400;
-        letter-spacing: 6px;
-        text-transform: uppercase;
-    }
-    
-    .profile-pic {
-        border-radius: 100%;
-        max-width: 80%;
-    }
-    
-    .profile-social {
-        margin: 0 auto;
-        height: 2em;
-        display: flex;
-        justify-content: row;
-        align-items: center;
-    }
-    
-    .profile-description {
-        margin: 1em;
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .profile-social img {
-        height: 1.5em;
-        width: auto;
-        margin: auto 0.5em;
-    }
-    
-    .profile-social img:hover {
-        height: 1.75em;
-    }
-}
-
-
 
 /* PROJECTS */
 #projects {
@@ -339,3 +298,10 @@ a:hover {
     font-size: 1.25em;
     color: #8b0000;
 }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+    body {
+      /* font-size: 30px; */
+    }
+  }
