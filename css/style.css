@@ -98,24 +98,6 @@ a:hover {
     color: #2E2E2E;
 }
 
-@media only screen and (max-width: 600px) {
-    .section-header {
-        font-size: 50px;
-    }
-
-    .section-subheader {
-        
-    }
-
-    .section-content {
-        max-width: 90%;
-    }
-}
-
-
-
-
-
 /* PROFILE */
 #profile-section {
     height: 100vh;
@@ -305,10 +287,3 @@ a:hover {
     font-size: 1.25em;
     color: #8b0000;
 }
-
-/* MEDIA QUERIES */
-@media only screen and (max-width: 600px) {
-    body {
-      /* font-size: 30px; */
-    }
-  }
