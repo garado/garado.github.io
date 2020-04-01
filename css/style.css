@@ -16,6 +16,7 @@ body {
     font-size: 20px;
     color: #2E2E2E;
     background-color: #F2F2F2;
+    padding-bottom: 2em;
 }
 
 nav {
@@ -52,7 +53,6 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    /* margin: 0 auto; */
 }
 
 /* FADING */
@@ -97,6 +97,9 @@ a:hover {
     color: #2E2E2E;
 }
 
+
+
+
 /* PROFILE */
 #profile-section {
     height: 100vh;
@@ -121,8 +124,10 @@ a:hover {
 }
 
 .profile-social {
-    margin-top: 0;
+    margin: 0 auto;
     height: 2em;
+    display: flex;
+    justify-content: row;
     align-items: center;
 }
 
@@ -139,8 +144,58 @@ a:hover {
 }
 
 .profile-social img:hover {
-    height: 1.6em;
+    height: 1.75em;
 }
+
+
+@media only screen and (max-width: 600px) {
+    #profile-section {
+        height: 100vh;
+        top: 0;
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+    .profile-name {
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+    }
+    
+    .profile-pic {
+        border-radius: 100%;
+        max-width: 80%;
+    }
+    
+    .profile-social {
+        margin: 0 auto;
+        height: 2em;
+        display: flex;
+        justify-content: row;
+        align-items: center;
+    }
+    
+    .profile-description {
+        margin: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .profile-social img {
+        height: 1.5em;
+        width: auto;
+        margin: auto 0.5em;
+    }
+    
+    .profile-social img:hover {
+        height: 1.75em;
+    }
+}
+
+
 
 /* PROJECTS */
 #projects {
@@ -206,6 +261,29 @@ a:hover {
     display: block;
 }
 
+/* WRITING */
+.writing-content {
+    width: 90%;
+}
+
+.writing-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.writing-img {
+    height: 330px;
+}
+
+.writing-title {
+    font-size: 1.25em;
+    margin: .15em;
+}
+
 /* RESUME */
 #resume {
     width: 60%;
@@ -251,4 +329,13 @@ a:hover {
 .project-text {
     text-align: left;
     letter-spacing: 0px;
+    margin: 0.45em auto;
+}
+
+.project-text-subtitle {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    /* font-weight: bold; */
+    font-size: 1.25em;
+    color: #8b0000;
 }
