@@ -99,9 +99,8 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-    .section {
-        margin: 0;
-        justify-content: left;
+    .section-header {
+        font-size: 50px;
     }
 }
 
