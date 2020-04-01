@@ -8,7 +8,7 @@ function fadeProfileElements() {
         }
         fadeProfile[i].classList.toggle("fade");
         i++;
-    }, 150);
+    }, 75);
 }
 
 function fadeNavbarElements() {
@@ -27,5 +27,5 @@ function fadeNavbarElements() {
 window.onload = function() {
     // Fade stuff in
     setTimeout(fadeProfileElements, 100);
-    setTimeout(fadeNavbarElements, 1000);
+    setTimeout(fadeNavbarElements, 500);
 };
