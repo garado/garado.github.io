@@ -9,7 +9,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="javascript/animation.js"></script>
         <script src="javascript/navbar.js"></script>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
@@ -35,20 +34,22 @@
             </div>
         </div>
 
-        <nav id="navbar">
-            <a href="#top" class="navlink fade2 fadeDefault">Profile</a>
-            <a href="#about" class="navlink fade2 fadeDefault">About</a>
-            <a href="#projects" class="navlink fade2 fadeDefault">Projects</a>
-            <!-- <a href="#writing" class="navlink fade2 fadeDefault">Writing</a> -->
-            <a href="resume.pdf" target="_blank" class="navlink fade2 fadeDefault">Resume</a>
-        </nav>
+        <div class="nav-wrapper" style="height: 10vh">
+            <nav id="navbar">
+                <a href="#top" class="navlink fade2 fadeDefault">Profile</a>
+                <a href="#about" class="navlink fade2 fadeDefault">About</a>
+                <a href="#projects" class="navlink fade2 fadeDefault">Projects</a>
+                <!-- <a href="#writing" class="navlink fade2 fadeDefault">Writing</a> -->
+                <a href="resume.pdf" target="_blank" class="navlink fade2 fadeDefault">Resume</a>
+            </nav>
+        </div>
 
         <div id="about" class="section flex">
             <div>
-                <h2 class="section-header" data-aos="fade-up">
+                <h2 class="section-header">
                     Hey!
                 </h2>
-                <div class="section-content" data-aos="fade-up">
+                <div class="section-content">
                     I'm an undergraduate at UC Santa Cruz studying Computer Engineering and
                     Computer Science. I'm specifically interested in aerospace embedded engineering,
                     and I like playing with web dev/web design on the side.
@@ -62,12 +63,12 @@
 
         <div id="projects" class="section flex">
             <div>
-                <h2 class="section-header" data-aos="fade-up">
+                <h2 class="section-header">
                     Projects
                 </h2>
                 <div class="project-content">
                     <a href="projects/rtos">
-                        <div class="project-box" data-aos="fade-up">
+                        <div class="project-box">
                             <img class="project-img" src="img/rtos4.jpg">
                             <div class="project-overlay">
                                 <div class="project-overlay-text">
@@ -82,7 +83,7 @@
                     </a>
 
                     <a href="projects/f110">
-                        <div class="project-box" data-aos="fade-up" data-aos-delay="50">
+                        <div class="project-box" data-aos-delay="50">
                             <img class="project-img" src="img/f110.HEIC">
                             <div class="project-overlay">
                                 <div class="project-overlay-text">
@@ -96,7 +97,7 @@
                         </div>
                     </a>
 
-                    <div class="project-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-box" data-aos-delay="100">
                         <img class="project-img" src="img/tech4good.png">
                         <div class="project-overlay">
                             <div class="project-overlay-text">
@@ -109,7 +110,7 @@
                         </div>
                     </div>
 
-                    <div class="project-box" data-aos="fade-up" data-aos-delay="150">
+                    <div class="project-box" data-aos-delay="150">
                         <img class="project-img" src="img/ewbucsc.png">
                         <div class="project-overlay">
                             <div class="project-overlay-text">
@@ -128,11 +129,11 @@
 
         <!-- <div id="writing" class="section flex">
             <div>
-                <h2 class="section-header" data-aos="fade-up">
+                <h2 class="section-header">
                     WRITING
                 </h2>
                 <div class="writing-content">
-                    <div class="writing-box" data-aos="fade-up">
+                    <div class="writing-box">
                         <a href="writing/c-appreciation-post">
                             <img class="writing-img" src="writing/embeddedsystems.jpg">
                             <div class="writing-title">
