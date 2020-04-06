@@ -233,11 +233,6 @@ a:hover {
     margin: .15em;
 }
 
-/* RESUME */
-#resume {
-    width: 60%;
-}
-
 /* INDIVIDUAL PROJECT PAGE */
 .proj-info-bar {
     display: flex;
