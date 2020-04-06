@@ -9,7 +9,7 @@ $(document).ready(function() {
         }
   
         // if before header
-        if ($(window).scrollTop() < ($(window).height() * .901)) {
+        if ($(window).scrollTop() < ($(window).height() * .9001)) {
             $('#navbar').removeClass('navbar-fixed-top');
             $('.navlink').removeClass('navlink-fixed');
         }
