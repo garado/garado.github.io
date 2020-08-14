@@ -25,12 +25,12 @@ nav {
     z-index: 1;
     width: 100%;
     height: 10vh;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
+    overflow: hidden;
 }
 
 /* applied after scrolling down far enough */
@@ -130,7 +130,6 @@ a:hover {
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 6px;
-    /* line-height: 58px; */
     text-transform: uppercase;
 }
 
@@ -294,4 +293,12 @@ a:hover {
     /* font-weight: bold; */
     font-size: 1.25em;
     color: #8b0000;
+}
+
+@media screen and (max-width: 400px) {
+    .profile-name { line-height: 45px; }
+    .profile-pic { max-width: 65%; }
+    .profile-social img:hover { height: 1.5em; }
+
+    .section-content { max-width: 85% }
 }
