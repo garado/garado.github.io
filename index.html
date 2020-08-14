@@ -2,9 +2,10 @@
 <html id="top">
     <head>
         <title>
-            Gia Alexis Garado
+            Alexis (Gia) Garado
         </title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/satellite_1f6f0.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="javascript/animation.js"></script>
@@ -16,7 +17,7 @@
         <div id="profile-section" class="flex">
             <img class="profile-pic fade1 fadeDefault" src="img/profile.jpg">
             <h1 class="profile-name fade1 fadeDefault">
-                Gia Alexis Garado
+                Alexis (Gia) Garado
             </h1>
             <div class="section-content fade1 fadeDefault" style="margin: 1em">
                 I build stuff.
@@ -35,12 +36,14 @@
         </div>
 
         <div class="nav-wrapper" style="height: 10vh">
-            <nav id="navbar">
-                <a href="#top" class="navlink fade2 fadeDefault">Profile</a>
+            <nav id="navbar" class="navbar responsive">
+                <a href="#top" class="navlink fade2 fadeDefault">Home</a>
                 <a href="#about" class="navlink fade2 fadeDefault">About</a>
                 <a href="#projects" class="navlink fade2 fadeDefault">Projects</a>
-                <!-- <a href="#writing" class="navlink fade2 fadeDefault">Writing</a> -->
                 <a href="resume.pdf" target="_blank" class="navlink fade2 fadeDefault">Resume</a>
+                <a href="javascript:void(0);" class="hamburger fade2 fadeDefault" onclick="navCollapse()">
+                    <i class="fa fa-bars"></i>
+                  </a>
             </nav>
         </div>
 
@@ -148,6 +151,16 @@
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init();
+        </script>
+        <script>
+            function navCollapse() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+            }
         </script>
     </body>
 </html>
