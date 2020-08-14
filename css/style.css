@@ -298,25 +298,13 @@ a:hover {
     color: #8b0000;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
+    a:hover { color: #2E2E2E };
     .profile-name { line-height: 45px; }
     .profile-pic { max-width: 65%; }
     .profile-social img:hover { height: 1.5em; }
-
     .section-content { max-width: 85% }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-    }
-    .navbar a:not(:first-child) { display: none; }
-    .hamburger {
-        margin: 0 1em; 
-        color: #2E2E2E;
-    }
-    .navbar.responsive .hamburger {
-        float: none;
-        display: block;
-        text-align: left;
-    }
+    .navbar a.hide-on-small-screens { display: none; }
 }
+
+/* Need to fix for galaxy fold, iphone5/se, ipad/pro */

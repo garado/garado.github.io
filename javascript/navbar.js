@@ -1,7 +1,6 @@
 $(document).ready(function() {
     // while scrolling
     $(window).scroll(function () { 
-  
         // if past header
         if ($(window).scrollTop() > ($(window).height() * .90)) {
             $('#navbar').addClass('navbar-fixed-top');
