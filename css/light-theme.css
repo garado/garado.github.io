@@ -22,6 +22,13 @@ body {
     padding-bottom: 2em;
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
 /* ============= NAVBAR ============= */
 nav {
     position: sticky;
@@ -34,11 +41,6 @@ nav {
     align-items: center;
     transition: all 0.2s;
     overflow: hidden;
-}
-
-/* what does this do? */
-nav .hamburger {
-    display: none;
 }
 
 /* Makes navbar sticky after scrolling down far enough */
@@ -63,7 +65,7 @@ nav .hamburger {
 }
 
 
-/* links */
+/* ============= LINK SETTINGS ============= */
 a {
     text-decoration: none;
     color:#BF616A;
@@ -74,14 +76,7 @@ a:hover {
     color: rgba(167, 167, 167, 1);
 }
 
-.flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-/* FADING */
+/* ============= FADE SETTINGS ============= */
 .fadeDefault {
     opacity: 0;
     visibility: hidden;
@@ -89,11 +84,11 @@ a:hover {
 }
 
 .fade {
-    opacity: 1 !important;
-    visibility: visible !important;
+    opacity: 1;
+    visibility: visible;
 }
 
-/* SECTIONS */
+/* ============= SECTION SETTINGS ============= */
 .section {
     margin: 5vh auto;
 }
@@ -104,7 +99,6 @@ a:hover {
     font-weight: 300;
     letter-spacing: 6px;
     line-height: 58px;
-    /* text-transform: uppercase; */
     color: #BF616A;
     padding-top: 12vh;
 }
@@ -125,7 +119,6 @@ a:hover {
 }
 
 /* ============= PROFILE ============= */
-
 #profile-section {
     height: 90vh;
     top: 0;
@@ -176,7 +169,6 @@ a:hover {
 }
 
 /* ============= PROJECT SECTION ============= */
-
 .project-content {
     width: 80% !important;
     margin: auto;
@@ -235,30 +227,7 @@ a:hover {
     display: block;
 }
 
-/* WRITING */
-.writing-content {
-    width: 90%;
-}
-
-.writing-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    text-align: left;
-    flex-wrap: wrap;
-}
-
-.writing-img {
-    height: 330px;
-}
-
-.writing-title {
-    font-size: 1.25em;
-    margin: .15em;
-}
-
-/* INDIVIDUAL PROJECT PAGE */
+/* ============= PROJECT PAGES ============= */
 .proj-info-bar {
     display: flex;
     flex-direction: row;
@@ -359,4 +328,14 @@ a:hover {
     text-transform: uppercase;
     margin-bottom: 0.5em;
     font-size: 0.9em;
+}
+
+/* ============= BUTTON SETTINGS ============= */
+button {
+    border: none;
+    background-color: #ECEFF4;
+}
+
+.darkmode{
+    display: none;
 }

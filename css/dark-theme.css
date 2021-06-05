@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap');
 
 /* i am by no means a web developer, nor do i intend to be one */
-/* so please don't judge my trash CSS too much */
+/* so please don't judge my trash CSS too harshly */
 
 html {
     scroll-behavior: smooth;
@@ -17,9 +17,16 @@ body {
     letter-spacing: 2px;
     line-height: 36px;
     font-size: 20px;
-    color: #2E3440;
-    background-color: #ECEFF4;
+    color: #ECEFF4;
+    background-color: #2E3440;
     padding-bottom: 2em;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 /* ============= NAVBAR ============= */
@@ -36,52 +43,48 @@ nav {
     overflow: hidden;
 }
 
-/* what does this do? */
-nav .hamburger {
-    display: none;
-}
-
 /* Makes navbar sticky after scrolling down far enough */
 .navbar-fixed-top {
-    background-color: #ECEFF4;
+    background-color: #2E3440;
     position: fixed;
     top: 0;
+    box-shadow: rgb(36 41 51 / 15%) 0px 5px 10px 0;
 }
 
 .navlink {
-    color: #2E3440;
+    color: #ECEFF4;
     margin: 0 1em;
     transition: all 0.2s;
 }
 
-.navlink-fixed {
-    /* color: #F2F2F2 !important; */
+/* ============= THEME BUTTON SETTINGS ============= */
+button {
+    border: none;
+    background-color: #2E3440;
 }
 
-.navlink-fixed:hover {
-    color: rgba(167, 167, 167, 1);
+/* Hides the moon icon and only shows the sun icon */
+.lightmode{
+    display: none;
 }
 
+.themeIcon:hover {
+    color: #5E81AC;
+    transition: all 0.2s;
+}
 
-/* links */
+/* ============= LINK SETTINGS ============= */
 a {
     text-decoration: none;
-    color:#BF616A;
+    color: #88C0D0;
     transition: all 0.2s;
 }
 
 a:hover {
-    color: rgba(167, 167, 167, 1);
+    color: #5E81AC;
 }
 
-.flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-/* FADING */
+/* ============= FADE SETTINGS ============= */
 .fadeDefault {
     opacity: 0;
     visibility: hidden;
@@ -89,43 +92,11 @@ a:hover {
 }
 
 .fade {
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-/* SECTIONS */
-.section {
-    margin: 5vh auto;
-}
-
-.section-header {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
-    font-weight: 300;
-    letter-spacing: 6px;
-    line-height: 58px;
-    /* text-transform: uppercase; */
-    color: #BF616A;
-    padding-top: 12vh;
-}
-
-.section-subheader {
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-.section-content {
-    max-width: 60%;
-    margin: auto;
-    font-family: 'Rubik', sans-serif;
-    font-size: 20px;
-    letter-spacing: 1px;
-    line-height: 33px;
-    color: #2E2E2E;
+    opacity: 1;
+    visibility: visible;
 }
 
 /* ============= PROFILE ============= */
-
 #profile-section {
     height: 90vh;
     top: 0;
@@ -140,6 +111,7 @@ a:hover {
     font-weight: 400;
     letter-spacing: 6px;
     text-transform: uppercase;
+    color: #88C0D0;
 }
 
 .profile-pic {
@@ -167,16 +139,73 @@ a:hover {
     height: 1.5em;
     width: auto;
     margin: auto 0.5em;
-    color: #2E3440;
+    color: #ECEFF4;
 }
 
 .profile-social a:hover {
     height: 1.75em;
-    color: #BF616A;
+    color: #5E81AC;
+}
+
+/* ============= DEFAULT SECTION SETTINGS ============= */
+.section {
+    margin: 5vh auto;
+    max-width: 65%;
+}
+
+.section-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    line-height: 58px;
+    color: #88C0D0;
+    padding-top: 12vh;
+}
+
+.section-subheader {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.section-content-box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.section-content-title {
+    font-size: 1.20em;
+    font-weight: bold;
+}
+
+.section-content-subtitle {
+    text-transform: uppercase;
+    margin-bottom: -0.25em;
+    font-size: 0.9em;
+}
+
+.section-content-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 33px;
+    color: #ECEFF4;
+}
+
+/* ============= SECTION: EXPERIENCE ============= */
+/* Formatting for my list of classes */
+.exp-class-container {
+    display: flex;
+}
+
+.exp-class-col {
+    float: left;
+    flex: 50%;
 }
 
 /* ============= PROJECT SECTION ============= */
-
 .project-content {
     width: 80% !important;
     margin: auto;
@@ -235,30 +264,7 @@ a:hover {
     display: block;
 }
 
-/* WRITING */
-.writing-content {
-    width: 90%;
-}
-
-.writing-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    text-align: left;
-    flex-wrap: wrap;
-}
-
-.writing-img {
-    height: 330px;
-}
-
-.writing-title {
-    font-size: 1.25em;
-    margin: .15em;
-}
-
-/* INDIVIDUAL PROJECT PAGE */
+/* ============= PROJECT PAGES ============= */
 .proj-info-bar {
     display: flex;
     flex-direction: row;
@@ -305,7 +311,7 @@ a:hover {
     letter-spacing: 5px;
     text-transform: uppercase;
     font-size: 1.25em;
-    color: #8b0000;
+    color: #88C0D0;
 }
 
 @media screen and (max-width: 450px) {
