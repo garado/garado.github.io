@@ -4,62 +4,202 @@
         <title>
             Alexis Garado
         </title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link id="theme" rel="stylesheet" type="text/css" href="css/dark-theme.css">
         <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/satellite_1f6f0.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="javascript/animation.js"></script>
         <script src="javascript/navbar.js"></script>
+        <script src="javascript/darkmode.js"></script>
+        <script src="https://unpkg.com/feather-icons"></script> <!-- open-source icons -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
 
+        <!-- Top profile section -->
         <div id="profile-section" class="flex">
             <img class="profile-pic fade1 fadeDefault" src="img/profile.jpg">
             <h1 class="profile-name fade1 fadeDefault">
                 Alexis Garado
             </h1>
             <div class="section-content fade1 fadeDefault" style="margin: 1em">
-                I make stuff.
+                Aspiring embedded systems engineer.
             </div>
             <div class="profile-social">
                 <a href="mailto:alexisgarado@gmail.com" target="_blank">
-                    <img class="icon fade1 fadeDefault" src="img/icon/email.png">
+                    <i class="icon fade1 fadeDefault" data-feather="mail"></i>
                 </a>
                 <a href="https://linkedin.com/in/garado" target="_blank">
-                    <img class="icon fade1 fadeDefault" src="img/icon/linkedin.png">
+                    <i class="icon fade1 fadeDefault" data-feather="linkedin"></i>
                 </a>
                 <a href="https://github.com/garado" target="_blank">
-                    <img class="icon fade1 fadeDefault" src="img/icon/github.png">
+                    <i class="icon fade1 fadeDefault" data-feather="github"></i>
                 </a>
             </div>
         </div>
 
+        <!-- Navbar -->
         <div class="nav-wrapper" style="height: 10vh">
             <nav id="navbar" class="navbar">
                 <a href="#top" class="navlink fade2 fadeDefault">Home</a>
                 <a href="#about" class="navlink fade2 fadeDefault hide-on-small-screens">About</a>
-                <a href="#projects" class="navlink fade2 fadeDefault">Projects</a>
+                <a href="#coolstuff" class="navlink fade2 fadeDefault">Projects</a>
+                <a href="#work" class="navlink fade2 fadeDefault">Experience</a>
                 <a href="resume.pdf" target="_blank" class="navlink fade2 fadeDefault">Resume</a>
+                <button id="theme-toggle">
+                    <i data-feather="moon" class="navlink fade2 fadeDefault lightmode themeIcon"></i>
+                    <i data-feather="sun"  class="navlink fade2 fadeDefault darkmode themeIcon"></i>
+                </button>
             </nav>
         </div>
 
+        <!-- About -->
         <div id="about" class="section flex">
             <div>
                 <h2 class="section-header">
                     Hey!
                 </h2>
-                <div class="section-content">
+                <div class="section-content-text">
                     I'm an undergraduate at UC Santa Cruz studying Computer Engineering with a concentration in
                     digital hardware, and I'm specifically interested in embedded systems and hardware design.
                     I work as a tutor teaching concepts related to computer architecture,
-                    logic design, and assembly.
+                    digital logic design, and assembly.
                     This summer, I'll be interning with <a href="https://www.maxar.com/" target="_blank">Maxar Technologies</a>
-                    as a software engineer.
+                    again as a software engineer.
+                    <br><br>
+                    Outside of school, I play piano and bass guitar.
                 </div>
             </div>
         </div>
 
-        <div id="projects" class="section flex">
+        <!-- Work experience -->
+        <div id="work" class="section flex">
+            <div>
+                <h2 class="section-header">
+                    Experience
+                </h2>
+
+                <div class="section-subheader">
+                    <u>Work</u>
+                </div>
+
+                <div class="section-content-box">
+                    <div class="section-content-title">
+                        Maxar Technologies
+                    </div>
+                    <div class="section-content-subtitle">
+                        Ground software intern (June 2020 - Dec 2020)
+                    </div>
+                    <div class="section-content-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eum dolorem assumenda! Voluptatibus 
+                        placeat vero rerum ducimus dolore eveniet dolorem. Nobis voluptatibus commodi corporis, repellat 
+                        ratione animi fuga necessitatibus magnam!
+                    </div>
+                </div>
+
+                <div class="section-content-box">
+                    <div class="section-content-title">
+                        University of California, Santa Cruz
+                    </div>
+                    <div class="section-content-subtitle">
+                        Logic Design Lab Tutor (March 2021 - Present)
+                    </div>
+                    <div class="section-content-text" style="margin-bottom: 1.5em">
+                        <a href="https://catalog.ucsc.edu/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-100" target="_blank">
+                            CSE100 at UCSC.
+                        </a>
+                        Introduction to system-level design using Verilog.
+                    </div>
+
+                    <div class="section-content-subtitle">
+                        Comp Systems & Assembly Language Lab Tutor (April 2019 - March 2021)
+                    </div>
+                    <div class="section-content-text" style="margin-bottom: 1.5em">
+                        <a href="https://catalog.ucsc.edu/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Lower-Division/CSE-12" target="_blank">
+                            CSE12 at UCSC.
+                        </a>
+                        Introduction to computer systems and assembly language and how computers compute in hardware and software.
+                    </div>
+
+                    <div class="section-content-subtitle">
+                        Advanced Programming Grader (June 2020 - Dec 2020)
+                    </div>
+                    <div class="section-content-text" style="margin-bottom: 1.5em">
+                        <a href="https://catalog.ucsc.edu/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-111" target="_blank">
+                            CSE111 at UCSC.
+                        </a>
+                        An introduction to object-oriented techniques of software development including data abstraction,
+                        inheritance, polymorphism, and object-oriented design. 
+                    </div>
+                </div>
+                
+                <div class="section-subheader">
+                    <u>Classwork</u>
+                </div>
+                <div class="exp-class-container">
+                    <div class="exp-class-col">
+                        <div class="exp-class-entry">Calculus I, II, III</div>
+                        <div class="exp-class-entry">Comp Systems & Assembly Language</div>
+                        <div class="exp-class-entry">Embedded Systems & C Programming</div>
+                        <div class="exp-class-entry">Data Structures and Algorithms</div>
+                        <div class="exp-class-entry">Applied Discrete Mathematics</div>
+                        <div class="exp-class-entry">Linear Algebra</div>
+                        <div class="exp-class-entry">Embedded System Design</div>
+                    </div>
+                    <div class="exp-class-col">
+                        <div class="exp-class-entry">Computer Architecture</div>
+                        <div class="exp-class-entry">Classical Mechanics</div>
+                        <div class="exp-class-entry">Electricity & Magnetism</div>
+                        <div class="exp-class-entry">Advanced Programming (C++)</div>
+                        <div class="exp-class-entry">Logic Design</div>
+                        <div class="exp-class-entry">Logic Design with Verilog</div>
+                        <div class="exp-class-entry">Intro to Electronic Circuits</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Projects (needs work!)-->
+        <div id="coolstuff" class="section flex">
+            <div>
+                <h2 class="section-header">
+                    Cool stuff I'm doing
+                </h2>
+                
+                <div class="coolstuff-cont">
+                    <div class="coolstuff-descbox">
+                        <div class="coolstuff-desctitle">
+                            Ground software intern
+                        </div>
+                        <div class="coolstuff-descdate">
+                            January 2020 - June 2020
+                        </div>
+                        <div class="coolstuff-desccont">
+                            At UCSC, I tutor for CSE100. Previously, I tutored for CSE12.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="coolstuff-cont">
+                    <div class="coolstuff-descbox">
+                        <div class="coolstuff-desctitle">
+                            Tutor
+                        </div>
+                        <div class="coolstuff-descdate">
+                            March 2018 - Present
+                        </div>
+                        <div class="coolstuff-desccont">
+                            I tutor for CSE100/L: Logic Design.
+                            I also tutored for CSE12/L: Computer Systems and Assembly Language for ~2 years.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <div id="projects" class="section flex">
             <div>
                 <h2 class="section-header">
                     Cool stuff I'm doing
@@ -80,35 +220,31 @@
                     </div>
                     </a>
 
-                    <!-- <a href="projects/rtos"> -->
-                        <div class="project-box">
-                            <img class="project-img" src="img/rtos4.jpg">
-                            <div class="project-overlay">
-                                <div class="project-overlay-text">
-                                    Real-Time Operating System
-                                </div>
-                                <hr noshade="noshade" width="20%" color="#F2F2F2">
-                                <div class="project-overlay-subtext">
-                                    Building an ARM Cortex-M OS
-                                </div>
+                    <div class="project-box">
+                        <img class="project-img" src="img/rtos4.jpg">
+                        <div class="project-overlay">
+                            <div class="project-overlay-text">
+                                Real-Time Operating System
+                            </div>
+                            <hr noshade="noshade" width="20%" color="#F2F2F2">
+                            <div class="project-overlay-subtext">
+                                Building an ARM Cortex-M OS
                             </div>
                         </div>
-                    <!-- </a> -->
+                    </div>
 
-                    <!-- <a href="projects/f110"> -->
-                        <div class="project-box" data-aos-delay="50">
-                            <img class="project-img" src="img/f110.HEIC">
-                            <div class="project-overlay">
-                                <div class="project-overlay-text">
-                                    Formula 1/10th
-                                </div>
-                                <hr noshade="noshade" width="20%" color="#F2F2F2">
-                                <div class="project-overlay-subtext">
-                                    Autonomous racing
-                                </div>
+                    <div class="project-box" data-aos-delay="50">
+                        <img class="project-img" src="img/f110.HEIC">
+                        <div class="project-overlay">
+                            <div class="project-overlay-text">
+                                Formula 1/10th
+                            </div>
+                            <hr noshade="noshade" width="20%" color="#F2F2F2">
+                            <div class="project-overlay-subtext">
+                                Autonomous racing
                             </div>
                         </div>
-                    <!-- </a> -->
+                    </div>
 
                     <div class="project-box" data-aos-delay="100">
                         <img class="project-img" src="img/tech4good.png">
@@ -138,29 +274,12 @@
 
                 </div>
             </div>
-        </div>
-
-        <!-- <div id="writing" class="section flex">
-            <div>
-                <h2 class="section-header">
-                    WRITING
-                </h2>
-                <div class="writing-content">
-                    <div class="writing-box">
-                        <a href="writing/c-appreciation-post">
-                            <img class="writing-img" src="writing/embeddedsystems.jpg">
-                            <div class="writing-title">
-                                C appreciation post
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div> -->
-
+        
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init();
+          feather.replace();
         </script>
     </body>
 </html>
