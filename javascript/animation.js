@@ -6,7 +6,9 @@ function fadeProfileElements() {
         if (i > (fadeProfileLimit - 2)) {
             clearInterval(fadeProfileInterval);
         }
-        fadeProfile[i].classList.toggle("fade");
+        if (fadeProfile[i] != null) {
+            fadeProfile[i].classList.toggle("fade");            
+        }
         i++;
     }, 75);
 }

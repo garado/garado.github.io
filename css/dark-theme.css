@@ -13,13 +13,13 @@ body {
     justify-content: center;
     text-align: center;
     margin: auto;
-    font-family: 'Rubik', sans-serif;
-    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
     line-height: 36px;
-    font-size: 20px;
+    font-size: 16px;
     color: #ECEFF4;
-    background-color: #2E3440;
+    background-color: #2e3440;
     padding-bottom: 2em;
+    transition: all 0.2s;
 }
 
 .flex {
@@ -32,7 +32,6 @@ body {
 /* ============= NAVBAR ============= */
 nav {
     position: sticky;
-    z-index: 1;
     width: 100%;
     height: 10vh;
     display: flex;
@@ -45,7 +44,7 @@ nav {
 
 /* Makes navbar sticky after scrolling down far enough */
 .navbar-fixed-top {
-    background-color: #2E3440;
+    background-color: #2e3440;
     position: fixed;
     top: 0;
     box-shadow: rgb(36 41 51 / 15%) 0px 5px 10px 0;
@@ -58,9 +57,9 @@ nav {
 }
 
 /* ============= THEME BUTTON SETTINGS ============= */
-button {
+button.theme {
     border: none;
-    background-color: #2E3440;
+    background-color: #2e3440;
 }
 
 /* Hides the moon icon and only shows the sun icon */
@@ -102,6 +101,7 @@ a:hover {
     top: 0;
     margin: 0 auto;
     align-items: center;
+    width: 100%;
 }
 
 .profile-name {
@@ -154,10 +154,9 @@ a:hover {
 }
 
 .section-header {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 40px;
     font-weight: 300;
-    letter-spacing: 6px;
     line-height: 58px;
     color: #88C0D0;
     padding-top: 12vh;
@@ -176,22 +175,23 @@ a:hover {
 }
 
 .section-content-title {
-    font-size: 1.20em;
+    font-size: 1.75em;
     font-weight: bold;
 }
 
 .section-content-subtitle {
     text-transform: uppercase;
     margin-bottom: -0.25em;
-    font-size: 0.9em;
+    font-size: 1.15em;
+    color: #8FBCBB;
 }
 
 .section-content-text {
-    font-family: 'Rubik', sans-serif;
-    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
     line-height: 33px;
     color: #ECEFF4;
+    margin-bottom: 1.5em;
 }
 
 /* ============= SECTION: EXPERIENCE ============= */
@@ -205,115 +205,111 @@ a:hover {
     flex: 50%;
 }
 
-/* ============= PROJECT SECTION ============= */
-.project-content {
-    width: 80% !important;
-    margin: auto;
-    justify-content: center;
+/* ============= PAGE: PROJECTS ============= */
+.proj-header {
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 58px;
+    color: #ECEFF4;
+    margin-bottom: 20px;
+}
+
+.proj-container {
+    overflow: hidden;
+}
+  
+.filter-cont {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
 }
 
-.project-box {
-    position: relative;
-    width: 300px;
-    margin: 0.5em;
+/* Project cards */
+.filterDiv {
+    float: left;
+    background-color: #2e3440;
+    border-radius: 10px;
+    color: #ECEFF4;
+    text-align: center;
+    margin: 10px;
+    display: none; /* Hidden by default */
+    box-shadow: rgb(15 17 21 / 20%) 0px 3px 6px 0px;
+    transition: 400ms;
+    overflow: hidden;
+    opacity: 0;
 }
 
-.project-box:hover .project-overlay {
+.filterDiv:hover {
+    box-shadow: rgb(15 17 21 / 20%) 0px 3px 12px 0px;
+}
+
+.card-title {
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-icon {
+    margin-top: 20px;
+}
+
+.card-desc {
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+    transition: all 0.2ss; /* why is this not working */
     opacity: 1;
 }
 
-.project-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(39, 39, 39, 0.6);
-    border-radius: 3%;
-    margin: auto;
+/* Filter buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 5px;
+    background-color: #2E3440;
+    color: #ECEFF4;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75em;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background-color: #5E81AC;
+}
+
+.btn.active {
+    background-color: #5E81AC;
+    color: white;
+}
+
+.proj-item-cont {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #F2F2F2;
-    align-items: center;
-}
-
-.project-overlay-text {
-    padding: 1px;
-    font-size: 1.4em;
-    line-height: 1.25em;
-    text-transform: uppercase;
-}
-
-.project-overlay-subtext {
-    padding: 1px;
-    line-height: 1em;
-}
-
-.project-img {
-    height: 300px;
-    width: 300px;
-    border-radius: 3%;
-    display: block;
-}
-
-/* ============= PROJECT PAGES ============= */
-.proj-info-bar {
-    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
 }
 
-.proj-info-tile {
+/* ============= INDIVIDUAL PROJECT PAGES ============= */
+.projpage-box {
+    background-color: #242933;
+    border-radius: 10px;
+    width: 90%;
     display: flex;
-    flex-direction: column;
-    margin: 0 1em;
 }
 
-.proj-info-title {
-    margin-bottom: -0.15em;
-    text-transform: uppercase;
-}
-
-.proj-info-desc {
-    font-size: 0.8em;
-    line-height: 1.5em;
-}
-
-.proj-img-container {
-    margin: 0.5em auto;
-}
-
-.proj-img {
-    margin: 1em auto;
-    height: 400px;
-}
-
-.proj-img-caption {
-    margin-top: -1.75em;
-    font-size: 15px;
-}
-
-.project-text {
-    text-align: left;
-    letter-spacing: 0px;
-    margin: 0.45em auto;
-}
-
-.project-text-subtitle {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font-size: 1.25em;
-    color: #88C0D0;
-}
-
+/* ============= COMPATIBILITY ============= */
 @media screen and (max-width: 450px) {
     a:hover { color: #2E2E2E };
     .profile-name { line-height: 45px; }
@@ -324,45 +320,3 @@ a:hover {
 }
 
 /* Need to fix for galaxy fold, iphone5/se, ipad/pro */
-
-/* NEW PROJECT DESIGN */
-#coolstuff {
-
-}
-
-.coolstuff-cont {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    max-width: 65%;
-    margin: 2em auto;
-}
-
-.coolstuff-img {
-    margin-right: 3em;
-    height: 280px;
-    width: 280px;
-    border-radius: 3%;
-    display: block;
-}
-
-.coolstuff-descbox {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.coolstuff-desctitle {
-    font-size: 1.20em;
-    font-weight: bold;
-}
-
-.coolstuff-desccont {
-    line-height: 30px;
-}
-
-.coolstuff-descdate {
-    text-transform: uppercase;
-    margin-bottom: 0.5em;
-    font-size: 0.9em;
-}
