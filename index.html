@@ -5,7 +5,8 @@
    <title>
       Alexis Garado
    </title>
-   <link id="theme" rel="stylesheet" type="text/css" href="css/dark-theme.css">
+   <link id="theme" rel="stylesheet" type="text/css" href="css/light.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
    <link rel="icon"
       href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/satellite_1f6f0.png">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -46,12 +47,13 @@
       <nav id="navbar" class="navbar">
          <a href="#top" class="navlink fade2 fadeDefault">Home</a>
          <a href="#about" class="navlink fade2 fadeDefault hide-on-small-screens">About</a>
-         <a href="#projects" class="navlink fade2 fadeDefault">Projects</a>
          <a href="#work" class="navlink fade2 fadeDefault">Experience</a>
+         <a href="#coursework" class="navlink fade2 fadeDefault">Coursework</a>
+         <!-- <a href="#projects" class="navlink fade2 fadeDefault">Projects</a> -->
          <a href="resume.pdf" target="_blank" class="navlink fade2 fadeDefault">Resume</a>
          <button id="theme-toggle" class="theme">
-            <i data-feather="moon" class="navlink fade2 fadeDefault lightmode themeIcon"></i>
-            <i data-feather="sun" class="navlink fade2 fadeDefault darkmode themeIcon"></i>
+            <i id="moon" data-feather="moon" class="navlink fade2 fadeDefault lightmode themeIcon"></i>
+            <i id="sun" data-feather="sun" class="navlink fade2 fadeDefault darkmode themeIcon"></i>
          </button>
       </nav>
    </div>
@@ -62,13 +64,10 @@
          <span title="General Kenobi.">Hello there!</span>
       </h2>
       <div class="section-content-text">
-         I'm an undergraduate at UC Santa Cruz studying Computer Engineering with a concentration in
+         I'm an undergraduate at UC Santa Cruz studying computer engineering with a concentration in
          digital hardware, and I'm specifically interested in embedded systems/hardware design and their applications
-         in the aerospace industry.
-         I work as a tutor teaching concepts related to computer architecture,
-         digital logic design, and assembly.
-         This summer, I'll be interning with <a href="https://www.maxar.com/" target="_blank">Maxar Technologies</a>
-         again doing cool space stuff in the ground software department.
+         within the aerospace and maritime industries.
+         I'm currently searching for an embedded systems internship for this summer.
       </div>
    </div>
 
@@ -84,20 +83,22 @@
                Maxar Technologies
             </div>
             <div class="section-content-subtitle">
-               Software engineer intern (June 2021 - Present)
+               Software engineer intern (June 2021 - Sept 2021)
             </div>
             <div class="section-content-text">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eum dolorem assumenda! Voluptatibus
-               placeat vero rerum ducimus dolore eveniet dolorem. Nobis voluptatibus commodi corporis, repellat
-               ratione animi fuga necessitatibus magnam!
+               <ul class="work-desc-list">
+                  <li>Created tool to automatically verify and repair satellite telemetry for all spacecraft</li>
+                  <li>Ran unit test procedures for command and telemetry processing to prepare for new software releases</li>
+               </ul>
             </div>
             <div class="section-content-subtitle">
                Software engineer intern (June 2020 - Dec 2020)
             </div>
             <div class="section-content-text">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eum dolorem assumenda! Voluptatibus
-               placeat vero rerum ducimus dolore eveniet dolorem. Nobis voluptatibus commodi corporis, repellat
-               ratione animi fuga necessitatibus magnam!
+               <ul class="work-desc-list">
+                  <li>Developed satellite telemetry archival software in the ground software department</li>
+                  <li>Worked closely with software involving encryption/decryption of telemetry</li>
+               </ul>
             </div>
          </div>
 
@@ -105,98 +106,97 @@
             <div class="section-content-title">
                University of California, Santa Cruz
             </div>
+
             <div class="section-content-subtitle">
-               Logic Design Lab Tutor (March 2021 - Present)
+               Tutor
             </div>
             <div class="section-content-text">
-               <a href="https://catalog.ucsc.edu/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-100"
-                  target="_blank">
-                  CSE100 at UCSC.
-               </a>
-               Introduction to system-level design using Verilog.
+               This position required mastery of the subject material as I clarified concepts taught in class and provided guidance to students completing lab assignments. I've been a tutor for various classes, including:
+               <ul>
+                  <li>
+                     <a href="https://catalog.ucsc.edu/en/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-121" target="_blank"> 
+                     CSE 121 - Embedded System Design
+                     </a>
+                     (Sept 2021 - Dec 2021)
+                  </li>
+                  <li>
+                     <a href="https://catalog.ucsc.edu/en/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-100" target="_blank"> 
+                     CSE 100 - Logic Design
+                     </a>
+                     (Mar 2021 - June 2021)
+                  </li>
+                  <li>
+                     <a href="https://catalog.ucsc.edu/en/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Lower-Division/CSE-12" target="_blank"> 
+                     CSE 12 - Computer Systems and Assembly Language
+                     </a>
+                     (Apr 2019 - Mar 2021)
+                  </li>
+               </ul>
             </div>
 
             <div class="section-content-subtitle">
-               Comp Systems & Assembly Language Lab Tutor (April 2019 - March 2021)
+               Grader
             </div>
             <div class="section-content-text">
-               <a href="https://catalog.ucsc.edu/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Lower-Division/CSE-12"
-                  target="_blank">
-                  CSE12 at UCSC.
-               </a>
-               Introduction to computer systems and assembly language and how computers compute in hardware and
-               software.
+               In this role, I was responsible for grading and giving feedback on students' assignments. I worked as a grader for various classes, including:
+               <ul>
+                  <li>
+                     <a href="https://catalog.ucsc.edu/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-111" target="_blank">
+                     CSE111 - Advanced Programming (C++)
+                     </a>
+                     (June 2020 - Dec 2020)
+                  </li>
+                 <li>
+                     <a href="https://catalog.ucsc.edu/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Lower-Division/CSE-12" target="_blank">
+                     CSE12 - Computer Systems and Assembly Language
+                     </a>
+                     (Sept 2019 - Dec 2019)
+                  </li>
+               </ul>
             </div>
 
-            <div class="section-content-subtitle">
-               Advanced Programming Grader (June 2020 - Dec 2020)
-            </div>
-            <div class="section-content-text">
-               <a href="https://catalog.ucsc.edu/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-111"
-                  target="_blank">
-                  CSE111 at UCSC.
-               </a>
-               An introduction to object-oriented techniques of software development including data abstraction,
-               inheritance, polymorphism, and object-oriented design.
-            </div>
          </div>
+      </div> <!-- end work experience -->
 
-         <div class="section-subheader">
-            <u>Coursework</u>
-         </div>
-         <div class="exp-class-container">
-            <div class="exp-class-col">
-               <div class="exp-class-entry">Calculus I, II, III</div>
-               <div class="exp-class-entry">Comp Systems & Assembly Language</div>
-               <div class="exp-class-entry">Embedded Systems & C Programming</div>
-               <div class="exp-class-entry">Data Structures and Algorithms</div>
-               <div class="exp-class-entry">Applied Discrete Mathematics</div>
-               <div class="exp-class-entry">Linear Algebra</div>
-               <div class="exp-class-entry">Embedded System Design</div>
-            </div>
-            <div class="exp-class-col">
-               <div class="exp-class-entry">Computer Architecture</div>
-               <div class="exp-class-entry">Classical Mechanics</div>
-               <div class="exp-class-entry">Electricity & Magnetism</div>
-               <div class="exp-class-entry">Advanced Programming (C++)</div>
-               <div class="exp-class-entry">Logic Design</div>
-               <div class="exp-class-entry">Logic Design with Verilog</div>
-               <div class="exp-class-entry">Intro to Electronic Circuits</div>
-            </div>
-         </div>
+      <div id="coursework" class="section flex coursework">
+         <h2 class="section-header"> Coursework </div>
+         <div class="section-content-box">
+            <div class="course-class-container">
+               <div class="course-class-col">
+                  <div class="course-class-col-header">
+                     <b>Computer Science & Engineering</b>
+                  </div>
+                  <div class="course-class-col-entries">
+                     <div class="course-class-entry">Advanced VLSI design (Graduate)</div>
+                     <div class="course-class-entry">Computer Architecture (Graduate)</div>
+                     <div class="course-class-entry">Embedded System Design</div>
+                     <div class="course-class-entry">Embedded Systems & C Programming</div>
+                     <div class="course-class-entry">Advanced Programming (C++)</div>
+                     <div class="course-class-entry">Data Structures and Algorithms</div>
+                     <div class="course-class-entry">Comp Systems & Assembly Language</div>
+                     <div class="course-class-entry">Logic Design</div>
+                     <div class="course-class-entry">Logic Design with Verilog</div>
+                  </div>
+               </div> <!-- end first col -->
+               <div class="course-class-col">
+                  <div class="course-class-col-header">
+                     <b>Math, Physics, & Electrical Engineering</b>
+                  </div>
+                  <div class="course-class-col-entries">
+                     <div class="course-class-entry">Calculus I, II, III</div>
+                     <div class="course-class-entry">Applied Discrete Mathematics</div>
+                     <div class="course-class-entry">Linear Algebra</div>
+                     <div class="course-class-entry">Classical Mechanics</div>
+                     <div class="course-class-entry">Statics & Mechanics of Materials</div>
+                     <div class="course-class-entry">Electricity & Magnetism</div>
+                     <div class="course-class-entry">Intro to Electronic Circuits</div>
+                     <div class="course-class-entry">Signals and Systems</div>
+                  </div>
+               </div> <!-- end second col -->
+            </div> <!-- end course class container -->
+         </div> <!-- end section content box -->
       </div>
-   </div>
-
-   <!-- Projects section -->
-   <div id="projects" class="section flex">
-      <h2 class="section-header">
-         Projects
-      </h2>
-
-      <div class="proj-item-cont-main section flex">
-         
-         <div class="filterDiv show">
-            <div class="card-icon">
-                <i data-feather="aperture"></i>
-            </div>
-            <div class="card-title">TinyScope</div>
-            <div class="card-desc">
-                A tiny oscilloscope. Final project for CSE121: Embedded System Design at UCSC.
-            </div>
-        </div>
-
-        <div class="filterDiv show">
-         <div class="card-icon">
-             <i data-feather="aperture"></i>
-         </div>
-         <div class="card-title">Chip8 Emulator</div>
-         <div class="card-desc">
-            Retro gaming
-         </div>
-     </div>
-
-      </div>
-   </div>
+   </div> <!-- end coursework -->
 
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
    <script>

@@ -1,362 +1,396 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap');
 
 /* i am by no means a web developer, nor do i intend to be one */
-/* so please don't judge my trash CSS too much */
+/* so please don't judge my trash CSS too harshly */
 
 html {
-    scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    font-family: 'Rubik', sans-serif;
-    letter-spacing: 2px;
-    line-height: 36px;
-    font-size: 20px;
-    color: #2E3440;
-    background-color: #ECEFF4;
-    padding-bottom: 2em;
-}
-
-/* ============= NAVBAR ============= */
-nav {
-    position: sticky;
-    z-index: 1;
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s;
-    overflow: hidden;
-}
-
-/* what does this do? */
-nav .hamburger {
-    display: none;
-}
-
-/* Makes navbar sticky after scrolling down far enough */
-.navbar-fixed-top {
-    background-color: #ECEFF4;
-    position: fixed;
-    top: 0;
-}
-
-.navlink {
-    color: #2E3440;
-    margin: 0 1em;
-    transition: all 0.2s;
-}
-
-.navlink-fixed {
-    /* color: #F2F2F2 !important; */
-}
-
-.navlink-fixed:hover {
-    color: rgba(167, 167, 167, 1);
-}
-
-
-/* links */
-a {
-    text-decoration: none;
-    color:#BF616A;
-    transition: all 0.2s;
-}
-
-a:hover {
-    color: rgba(167, 167, 167, 1);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   margin: auto;
+   font-family: 'Open Sans', sans-serif;
+   line-height: 36px;
+   font-size: 16px;
+   color: var(--main-text-color);
+   background-color: var(--main-bg-color);
+   padding-bottom: 2em;
+   transition: all 0.2s;
 }
 
 .flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
 }
 
-/* FADING */
+/* ============= NAVBAR ============= */
+
+nav {
+   position: sticky;
+   width: 100%;
+   height: 10vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.2s;
+   overflow: hidden;
+}
+
+/* Makes navbar sticky after scrolling down far enough */
+
+.navbar-fixed-top {
+   background-color: var(--main-bg-color);
+   position: fixed;
+   top: 0;
+   box-shadow: rgb(36 41 51 / 15%) 0px 5px 10px 0;
+}
+
+.navlink {
+   color: var(--main-text-color);
+   margin: 0 1em;
+   transition: all 0.2s;
+}
+
+/* ============= THEME BUTTON SETTINGS ============= */
+
+button.theme {
+   border: none;
+   top: 50%;
+   transform: translateY(10%);
+   background-color: var(--main-bg-color);
+   transition: all 0.2s;
+}
+
+/* Hides the moon icon and only shows the sun icon
+
+.lightmode {
+   display: none;
+} */
+
+.themeIcon:hover {
+   color: var(--link-hover-color);
+   transition: all 0.2s;
+}
+
+/* ============= LINK SETTINGS ============= */
+
+a {
+   text-decoration: none;
+   color: var(--link-base-color);
+   transition: all 0.2s;
+}
+
+a:hover {
+   color: var(--link-hover-color);
+}
+
+/* ============= FADE SETTINGS ============= */
+
 .fadeDefault {
-    opacity: 0;
-    visibility: hidden;
-    transition: ease-in 0.2s;
+   opacity: 0;
+   visibility: hidden;
+   transition: ease-in 0.2s;
 }
 
 .fade {
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-/* SECTIONS */
-.section {
-    margin: 5vh auto;
-}
-
-.section-header {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
-    font-weight: 300;
-    letter-spacing: 6px;
-    line-height: 58px;
-    /* text-transform: uppercase; */
-    color: #BF616A;
-    padding-top: 12vh;
-}
-
-.section-subheader {
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-.section-content {
-    max-width: 60%;
-    margin: auto;
-    font-family: 'Rubik', sans-serif;
-    font-size: 20px;
-    letter-spacing: 1px;
-    line-height: 33px;
-    color: #2E2E2E;
+   opacity: 1;
+   visibility: visible;
 }
 
 /* ============= PROFILE ============= */
 
 #profile-section {
-    height: 90vh;
-    top: 0;
-    margin: 0 auto;
-    align-items: center;
+   height: 90vh;
+   top: 0;
+   margin: 0 auto;
+   align-items: center;
+   max-width: 60%;
 }
 
 .profile-name {
-    margin-bottom: 0;
-    letter-spacing: 2px;
-    font-size: 40px;
-    font-weight: 400;
-    letter-spacing: 6px;
-    text-transform: uppercase;
+   margin-bottom: 0;
+   letter-spacing: 2px;
+   font-size: 40px;
+   font-weight: 400;
+   letter-spacing: 6px;
+   text-transform: uppercase;
+   color: var(--profile-name-color);
 }
 
 .profile-pic {
-    border-radius: 100%;
-    max-width: 20%;
+   border-radius: 100%;
+   max-width: 20%;
 }
 
 /* Tiny description below my name */
+
 .profile-description {
-    margin: 1em;
-    display: flex;
-    flex-direction: row;
+   margin: 1em;
+   display: flex;
+   flex-direction: row;
 }
 
 /* Links below my name */
+
 .profile-social {
-    margin: 0 auto;
-    height: 2em;
-    display: flex;
-    justify-content: row;
-    align-items: center;
+   margin: 0 auto;
+   height: 2em;
+   display: flex;
+   justify-content: row;
+   align-items: center;
 }
 
 .profile-social a {
-    height: 1.5em;
-    width: auto;
-    margin: auto 0.5em;
-    color: #2E3440;
+   height: 1.5em;
+   width: auto;
+   margin: auto 0.5em;
+   color: var(--main-text-color);
 }
 
 .profile-social a:hover {
-    height: 1.75em;
-    color: #BF616A;
+   height: 1.75em;
+   color: var(--link-hover-color);
 }
 
-/* ============= PROJECT SECTION ============= */
+/* ============= DEFAULT SECTION SETTINGS ============= */
 
-.project-content {
-    width: 80% !important;
-    margin: auto;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.section {
+   margin: 5vh auto;
+   max-width: 80%;
 }
 
-.project-box {
-    position: relative;
-    width: 300px;
-    margin: 0.5em;
+.section-header {
+   font-family: 'Rubik', sans-serif;
+   font-size: 40px;
+   font-weight: 300;
+   line-height: 58px;
+   color: var(--link-base-color);
+   padding-top: 12vh;
 }
 
-.project-box:hover .project-overlay {
-    opacity: 1;
+.section-subheader {
+   letter-spacing: 3px;
+   text-transform: uppercase;
 }
 
-.project-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(39, 39, 39, 0.6);
-    border-radius: 3%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #F2F2F2;
-    align-items: center;
+.section-content-box {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   margin-bottom: 2em;
 }
 
-.project-overlay-text {
-    padding: 1px;
-    font-size: 1.4em;
-    line-height: 1.25em;
-    text-transform: uppercase;
+.section-content-title {
+   font-size: 1.75em;
+   font-weight: bold;
+   color: var(--section-content-title);
 }
 
-.project-overlay-subtext {
-    padding: 1px;
-    line-height: 1em;
+.section-content-subtitle {
+   text-transform: uppercase;
+   margin-bottom: -0.25em;
+   font-size: 1.15em;
+   color: var(--main-subtitle-color);
 }
 
-.project-img {
-    height: 300px;
-    width: 300px;
-    border-radius: 3%;
-    display: block;
+.section-content-text {
+   font-family: 'Open Sans', sans-serif;
+   letter-spacing: 1px;
+   line-height: 33px;
+   color: var(--main-text-color);
+   margin-bottom: 1.5em;
 }
 
-/* WRITING */
-.writing-content {
-    width: 90%;
+/* ============= SECTION: ABOUT ============= */
+#about {
+   max-width: 60%;
 }
 
-.writing-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    text-align: left;
-    flex-wrap: wrap;
+/* ============= SECTION: WORK ============= */
+#work {
+   max-width: 60%;
 }
 
-.writing-img {
-    height: 330px;
+.work-desc-list {
+   margin-top: 0px;
 }
 
-.writing-title {
-    font-size: 1.25em;
-    margin: .15em;
+/* ============= SECTION: COURSEWORK ============= */
+
+#coursework {
+   max-width: 60%;
+   margin-bottom: 0px;
 }
 
-/* INDIVIDUAL PROJECT PAGE */
-.proj-info-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.course-class-container {
+   display: flex;
+   flex-wrap: nowrap;
+   flex-direction: row;
 }
 
-.proj-info-tile {
-    display: flex;
-    flex-direction: column;
-    margin: 0 1em;
+.course-class-col {
+   flex: 100%;
+   max-width: 50%;
+   text-align: center;
+   margin-top: 0px;
 }
 
-.proj-info-title {
-    margin-bottom: -0.15em;
-    text-transform: uppercase;
+.course-class-col-header {
+   color: var(--main-subtitle-color);
 }
 
-.proj-info-desc {
-    font-size: 0.8em;
-    line-height: 1.5em;
+/* ============= SECTION: PROJECTS ============= */
+
+.proj-item-cont-main {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   max-width: 60%;
 }
 
-.proj-img-container {
-    margin: 0.5em auto;
+/* ============= PAGE: PROJECTS ============= */
+
+.proj-header {
+   font-family: 'Rubik', sans-serif;
+   font-size: 40px;
+   font-weight: 300;
+   line-height: 58px;
+   color: var(--main-text-color);
+   margin-bottom: 20px;
 }
 
-.proj-img {
-    margin: 1em auto;
-    height: 400px;
+.proj-container {
+   overflow: hidden;
 }
 
-.proj-img-caption {
-    margin-top: -1.75em;
-    font-size: 15px;
+.filter-cont {
+   display: flex;
+   flex-direction: row;
+   font-family: 'Open Sans', sans-serif;
+   overflow: hidden;
 }
 
-.project-text {
-    text-align: left;
-    letter-spacing: 0px;
-    margin: 0.45em auto;
+/* Project cards */
+
+.filterDiv {
+   float: left;
+   background-color: #3b4252;
+   border-radius: 10px;
+   color: var(--main-text-color);
+   width: 45%;
+   text-align: center;
+   margin: 10px;
+   display: none;
+   /* Hidden by default */
+   box-shadow: rgb(15 17 21 / 20%) 0px 3px 6px 0px;
+   transition: 400ms;
+   overflow: hidden;
+   opacity: 0;
+   font-family: 'Rubik', sans-serif;
 }
 
-.project-text-subtitle {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font-size: 1.25em;
-    color: #8b0000;
+.filterDiv:hover {
+   box-shadow: rgb(15 17 21 / 20%) 0px 3px 12px 0px;
 }
+
+.card-title {
+   font-family: 'Rubik', sans-serif;
+   text-transform: uppercase;
+   font-size: 1.25em;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+.card-icon {
+   margin-top: 20px;
+}
+
+.card-desc {
+   font-size: 15px;
+   margin-left: 15px;
+   margin-right: 15px;
+   margin-bottom: 15px;
+   line-height: 23px;
+}
+
+/* The "show" class is added to the filtered elements */
+
+.show {
+   display: block;
+   transition: all 0.2ss;
+   /* why is this not working */
+   opacity: 1;
+}
+
+/* Filter buttons */
+
+.btn {
+   border: none;
+   outline: none;
+   padding: 10px 5px;
+   background-color: var(--main-bg-color);
+   color: var(--main-text-color);
+   cursor: pointer;
+   border-radius: 3px;
+   transition: all 0.2s;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 0.75em;
+   overflow: hidden;
+}
+
+.btn:hover {
+   background-color: var(--link-hover-color);
+}
+
+.btn.active {
+   background-color: var(--link-hover-color);
+   color: white;
+}
+
+.proj-item-cont {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+/* ============= INDIVIDUAL PROJECT PAGES ============= */
+
+.projpage-box {
+   background-color: #242933;
+   border-radius: 10px;
+   width: 90%;
+   display: flex;
+}
+
+/* ============= COMPATIBILITY ============= */
 
 @media screen and (max-width: 450px) {
-    a:hover { color: #2E2E2E };
-    .profile-name { line-height: 45px; }
-    .profile-pic { max-width: 65%; }
-    .profile-social img:hover { height: 1.5em; }
-    .section-content { max-width: 85% }
-    .navbar a.hide-on-small-screens { display: none; }
+   a:hover {
+      color: #2E2E2E
+   }
+   ;
+   .profile-name {
+      line-height: 45px;
+   }
+   .profile-pic {
+      max-width: 65%;
+   }
+   .profile-social img:hover {
+      height: 1.5em;
+   }
+   .section-content {
+      max-width: 85%
+   }
+   .navbar a.hide-on-small-screens {
+      display: none;
+   }
 }
 
 /* Need to fix for galaxy fold, iphone5/se, ipad/pro */
-
-/* NEW PROJECT DESIGN */
-#coolstuff {
-
-}
-
-.coolstuff-cont {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    max-width: 65%;
-    margin: 2em auto;
-}
-
-.coolstuff-img {
-    margin-right: 3em;
-    height: 280px;
-    width: 280px;
-    border-radius: 3%;
-    display: block;
-}
-
-.coolstuff-descbox {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.coolstuff-desctitle {
-    font-size: 1.20em;
-    font-weight: bold;
-}
-
-.coolstuff-desccont {
-    line-height: 30px;
-}
-
-.coolstuff-descdate {
-    text-transform: uppercase;
-    margin-bottom: 0.5em;
-    font-size: 0.9em;
-}

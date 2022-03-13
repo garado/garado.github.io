@@ -26,8 +26,22 @@ function fadeNavbarElements() {
     }, 75);
 }
 
+function themeIcon() {
+    const themeStylesheet = document.getElementById('theme');
+    const darkIcon = document.getElementById('moon');
+    const lightIcon = document.getElementById('sun');
+    if (themeStylesheet.href.includes('light')){
+        lightIcon.style.display = 'initial';
+        darkIcon.style.display='none';
+    } else {
+        lightIcon.style.display = 'none';
+        darkIcon.style.display='initial';
+    }
+}
+
 window.onload = function() {
     // Fade stuff in
     setTimeout(fadeProfileElements, 100);
     setTimeout(fadeNavbarElements, 500);
+    themeIcon();
 };
