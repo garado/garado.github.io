@@ -11,9 +11,11 @@
 
    <!-- Screen sizing -->
    <!-- <link rel="stylesheet" type="text/css" href="css/all.css"> -->
-   <link rel="stylesheet" type="text/css" href="css/size/small.css" media="(min-width: 20em) and (max-width: 63em)">
-   <link rel="stylesheet" type="text/css" href="css/size/medium.css" media="(min-width: 64em) and (max-width: 89em)">
-   <link rel="stylesheet" type="text/css" href="css/size/large.css" media="(min-width: 90em) and (max-width: 119em)">
+   <link rel="stylesheet" type="text/css" href="css/size/extra-small.css" media="(min-width: 0em) and (max-width: 19.99em)">
+   <link rel="stylesheet" type="text/css" href="css/size/small-portrait.css" media="(min-width: 20em) and (max-width: 52.99em) and (orientation: portrait)">
+   <link rel="stylesheet" type="text/css" href="css/size/small-landscape.css" media="(min-width: 20em) and (max-width: 52.99em) and (orientation: landscape)">
+   <link rel="stylesheet" type="text/css" href="css/size/medium.css" media="(min-width: 53em) and (max-width: 89.99em)">
+   <link rel="stylesheet" type="text/css" href="css/size/large.css" media="(min-width: 90em) and (max-width: 119.99em)">
    <link rel="stylesheet" type="text/css" href="css/size/extra-large.css" media="(min-width: 120em)">
    <link rel="stylesheet" type="text/css" href="css/size/print.css" media="print">
 
@@ -33,49 +35,54 @@
    <!-- Navbar -->
    <div class="nav-wrapper" style="height: 10vh">
       <nav id="navbar" class="navbar">
-         <!-- <a href="#top" class="navlink fade2 fadeDefault">Menu</a> -->
-         <div class="navbar-header">
+         <!-- <a href="#top" class="navlink fadeGroup2 fadeDefault">Menu</a> -->
+         <div class="navbar-header fadeGroup1">
             <a href="#top">AG</a>
-            <a class="menu" onclick="toggleMobileNavbar()">
-               <i data-feather="menu"></i>
-            </a>
+            <div class="navbar-header-right">
+               <button class="theme" onclick="toggleTheme()">
+                  <i id="moon-mobile" data-feather="moon" class="navlink lightmode themeIcon" style="display: none"></i>
+                  <i id="sun-mobile" data-feather="sun" class="navlink darkmode themeIcon"></i>
+               </button>
+               <a class="menu" onclick="toggleMobileNavbar()">
+                  <i data-feather="menu"></i>
+               </a>
+            </div> <!-- end navbar header right -->
          </div>
          <div id="navlink-cont" class="isClosed" onclick="toggleMobileNavbar()">
-            <a href="#top" class=" navlink fade2 fadeDefault">Home</a>
-            <a href="#about" class=" navlink fade2 fadeDefault">About</a>
-            <a href="#work" class=" navlink fade2 fadeDefault">Experience</a>
-            <a href="#coursework" class=" navlink fade2 fadeDefault">Coursework</a>
-            <!-- <a href="#projects" class="navlink fade2 fadeDefault">Projects</a> -->
-            <a href="Garado_Alexis_Resume_3.13.22.pdf" target="_blank" class=" navlink fade2 fadeDefault">Resume</a>
+            <a href="#top" class="navlink fadeGroup2 fadeDefault">Home</a>
+            <a href="#about" class="navlink fadeGroup2 fadeDefault">About</a>
+            <a href="#work" class="navlink fadeGroup2 fadeDefault">Experience</a>
+            <a href="#coursework" class="navlink fadeGroup2 fadeDefault">Coursework</a>
+            <!-- <a href="#projects" class="navlink fadeGroup2 fadeDefault">Projects</a> -->
+            <a href="Garado_Alexis_Resume_3.13.22.pdf" target="_blank" class=" navlink fadeGroup2 fadeDefault">Resume</a>
             <a id="theme-toggle-icon">
                <button class="theme" onclick="toggleTheme()">
-                  <i id="moon" data-feather="moon" class="navlink fade2 fadeDefault lightmode themeIcon"></i>
-                  <i id="sun" data-feather="sun" class="navlink fade2 fadeDefault darkmode themeIcon"></i>
+                  <i id="moon-wide" data-feather="moon" class="navlink fadeGroup2 fadeDefault lightmode themeIcon" style="display: none"></i>
+                  <i id="sun-wide" data-feather="sun" class="navlink fadeGroup2 fadeDefault darkmode themeIcon"></i>
                </button>
             </a>
-            <a id="theme-toggle-text" class="navlink " onclick="toggleTheme()">Change theme</a>
-         </div>
+         </div> <!-- end navlink cont -->
       </nav>
    </div>
 
    <!-- Top profile section -->
    <div id="profile-section" class="flex">
-      <img class="profile-pic fade1 fadeDefault" src="img/profile.jpg">
-      <h1 class="profile-name fade1 fadeDefault">
+      <img class="profile-pic fadeGroup1 fadeDefault" src="img/profile.jpg">
+      <h1 class="profile-name fadeGroup1 fadeDefault">
          Alexis Garado
       </h1>
-      <div class="section-content fade1 fadeDefault" style="margin: 1em">
+      <div class="section-content profile-description fadeGroup1 fadeDefault" style="margin: 1em">
          Aspiring embedded systems engineer.
       </div>
       <div class="profile-social">
          <a href="mailto:alexisgarado@gmail.com" target="_blank">
-            <i class="icon fade1 fadeDefault" data-feather="mail"></i>
+            <i class="icon fadeGroup1 fadeDefault" data-feather="mail"></i>
          </a>
          <a href="https://linkedin.com/in/garado" target="_blank">
-            <i class="icon fade1 fadeDefault" data-feather="linkedin"></i>
+            <i class="icon fadeGroup1 fadeDefault" data-feather="linkedin"></i>
          </a>
          <a href="https://github.com/garado" target="_blank">
-            <i class="icon fade1 fadeDefault" data-feather="github"></i>
+            <i class="icon fadeGroup1 fadeDefault" data-feather="github"></i>
          </a>
       </div>
    </div>

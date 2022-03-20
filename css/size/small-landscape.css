@@ -56,15 +56,25 @@ nav .navbar-header {
    margin-right: 1.5em;
 }
 
-/* Need this here to center the menu button */
-.navbar-header .menu {
+.navbar-header .navbar-header-right {
    display: flex;
+   flex-direction: row;
+   /* align-items: flex-end; */
+   justify-content: right;
+}
+
+/* Need this here to center the menu button */
+a.menu {
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 /* Basic navbar link settings */ 
 .navlink {
    color: var(--main-text-color);
-   margin: 0 1em;
+   margin-left: 1.5em;
+   margin-right: 1.5em;
    transition: all 0.2s;
 }
 
@@ -88,11 +98,12 @@ nav .navbar-header {
    opacity: 0;
    visibility: hidden;
    height: 0;
-   transition: opacity 0.75s, visibility 0.75s, height 0.75s;
-   overflow: hidden;  
+   transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+   overflow: hidden;
+   box-shadow: none;
 }
 
-/* Animation to show links when navbar open */
+/* Show links when navbar open */
 #navlink-cont.isOpen {
    display: flex;
    flex-direction: column;
@@ -101,7 +112,8 @@ nav .navbar-header {
    opacity: 1;
    visibility: visible;
    height: 15em;
-   transition: opacity 0.75s, visibility 0.75s, height 0.75s;
+   transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+   box-shadow: var (--navbar-shadow-color), 0px 20px 10px 0px;
 }
 
 /* ============= THEME BUTTON SETTINGS ============= */
@@ -112,6 +124,10 @@ button.theme {
    transform: translateY(10%);
    background-color: var(--main-bg-color);
    transition: all 0.2s;
+}
+
+.themeIcon {
+   color: var(--link-base-color);
 }
 
 /* Hides the moon icon and only shows the sun icon
@@ -155,9 +171,13 @@ a:hover {
 #profile-section {
    height: 85vh;
    top: 0;
-   margin: 0 auto;
+   margin: 4em auto;
    align-items: center;
    max-width: 60%;
+}
+
+#profile-section.section-content {
+   margin: 0;
 }
 
 .profile-name {
@@ -173,7 +193,7 @@ a:hover {
 
 .profile-pic {
    border-radius: 100%;
-   max-width: 80%;
+   max-width: 40%;
 }
 
 /* Tiny description below my name */
@@ -290,7 +310,7 @@ a:hover {
 
 .course-class-container {
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    align-items: center;
 }
 
