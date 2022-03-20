@@ -222,6 +222,10 @@ a:hover {
    margin-top: 0px;
 }
 
+.work-subtitle {
+   margin-bottom: 0.25em;
+}
+
 .work-dates {
    display: none;
 }

@@ -126,7 +126,7 @@ a:hover {
 
 .profile-pic {
    border-radius: 100%;
-   max-width: 20%;
+   max-width: 80%;
 }
 
 /* Tiny description below my name */
@@ -173,6 +173,7 @@ a:hover {
    line-height: 58px;
    color: var(--link-base-color);
    padding-top: 12vh;
+   margin-bottom: ;
 }
 
 .section-subheader {
@@ -203,7 +204,7 @@ a:hover {
 .section-content-text {
    font-family: 'Open Sans', sans-serif;
    letter-spacing: 1px;
-   line-height: 1.5em;
+   line-height: 1.75em;
    color: var(--main-text-color);
    margin-bottom: 1.5em;
 }
@@ -219,7 +220,17 @@ a:hover {
 }
 
 .work-desc-list {
-   margin-top: 0px;
+   margin-top: 0.5em;
+   margin-left: -0.85em;
+}
+
+.work-subtitle {
+   margin-top: 0.25em;
+   line-height: 1.25em;
+}
+
+.work-dates {
+   display: inline;
 }
 
 /* ============= SECTION: COURSEWORK ============= */
