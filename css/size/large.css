@@ -12,6 +12,7 @@ body {
    flex-direction: column;
    justify-content: center;
    text-align: center;
+   align-items: flex-start;
    margin: auto;
    font-family: 'Open Sans', sans-serif;
    line-height: 36px;
@@ -31,6 +32,16 @@ body {
 
 /* ============= NAVBAR ============= */
 
+/* On large screens, navbar should be below profile pic */
+.nav-wrapper {
+   order: 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+}
+
+/* Basic navbar settings */
 nav {
    position: sticky;
    width: 100%;
@@ -44,7 +55,6 @@ nav {
 }
 
 /* Makes navbar sticky after scrolling down far enough */
-
 .navbar-fixed-top {
    background-color: var(--main-bg-color);
    position: fixed;
@@ -52,10 +62,37 @@ nav {
    box-shadow: rgb(36 41 51 / 15%) 0px 5px 10px 0;
 }
 
+/* Navlink container settings */
+.navlink-cont {
+   width: 100%;
+   display: block;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Navlink settings */
 .navlink {
    color: var(--main-text-color);
    margin: 0 1em;
    transition: all 0.2s;
+}
+
+/* Change theme icon cursor */
+#theme-toggle-icon {
+   cursor: pointer;
+}
+
+/* Hide elements meant for smaller screens */
+.navbar-header a.menu {
+   display: none;
+}
+#theme-toggle-text {
+   display: none;
+}
+.navbar-header {
+   display: none;
 }
 
 /* ============= THEME BUTTON SETTINGS ============= */
@@ -112,6 +149,7 @@ a:hover {
    margin: 0 auto;
    align-items: center;
    max-width: 60%;
+   order: 1;
 }
 
 .profile-name {
@@ -211,10 +249,12 @@ a:hover {
 /* ============= SECTION: ABOUT ============= */
 #about {
    max-width: 60%;
+   order: 3;
 }
 
 /* ============= SECTION: WORK ============= */
 #work {
+   order: 4;
    max-width: 60%;
 }
 
@@ -233,6 +273,7 @@ a:hover {
 /* ============= SECTION: COURSEWORK ============= */
 
 #coursework {
+   order: 5;
    max-width: 60%;
    margin-bottom: 0px;
 }

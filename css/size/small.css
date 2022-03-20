@@ -31,36 +31,77 @@ body {
 
 /* ============= NAVBAR ============= */
 
+/* Basic settings */
 nav {
-   position: sticky;
+   position: fixed;
    width: 100%;
-   height: 10vh;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    justify-content: center;
-   align-items: center;
+   align-items: left;
    transition: all 0.2s;
    overflow: hidden;
-}
-
-/* Makes navbar sticky after scrolling down far enough */
-
-.navbar-fixed-top {
    background-color: var(--main-bg-color);
-   position: fixed;
-   top: 0;
-   box-shadow: rgb(36 41 51 / 15%) 0px 5px 10px 0;
 }
 
+/* Navbar header (logo + menu button on small screens) */
+nav .navbar-header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 0.75em;
+   margin-bottom: 0.75em;
+   margin-left: 1.5em;
+   margin-right: 1.5em;
+}
+
+/* Need this here to center the menu button */
+.navbar-header .menu {
+   display: flex;
+}
+
+/* Basic navbar link settings */ 
 .navlink {
    color: var(--main-text-color);
    margin: 0 1em;
    transition: all 0.2s;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
-.navbar .icon {
+/* Hide sun/moon icon on small screens... */
+#theme-toggle-icon {
    display: none;
+}
+
+#theme-toggle-text {
+   cursor: pointer;
+}
+
+/* == ANIMATION STUFF == */
+
+/* Hide links when navbar closed */
+#navlink-cont.isClosed {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   text-align: left;
+   opacity: 0;
+   visibility: hidden;
+   height: 0;
+   transition: opacity 0.75s, visibility 0.75s, height 0.75s;
+   overflow: hidden;  
+}
+
+/* Animation to show links when navbar open */
+#navlink-cont.isOpen {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   text-align: left;
+   opacity: 1;
+   visibility: visible;
+   height: 15em;
+   transition: opacity 0.75s, visibility 0.75s, height 0.75s;
 }
 
 /* ============= THEME BUTTON SETTINGS ============= */
@@ -109,10 +150,10 @@ a:hover {
    visibility: visible;
 }
 
-/* ============= PROFILE ============= */
+/* ============= SECTION: PROFILE ============= */
 
 #profile-section {
-   height: 90vh;
+   height: 85vh;
    top: 0;
    margin: 0 auto;
    align-items: center;
@@ -125,13 +166,14 @@ a:hover {
    font-size: 40px;
    font-weight: 400;
    letter-spacing: 6px;
+   line-height: 1.1em;
    text-transform: uppercase;
    color: var(--profile-name-color);
 }
 
 .profile-pic {
    border-radius: 100%;
-   max-width: 20%;
+   max-width: 80%;
 }
 
 /* Tiny description below my name */
@@ -168,7 +210,7 @@ a:hover {
 
 .section {
    margin: 5vh auto;
-   max-width: 80%;
+   max-width: 100%;
 }
 
 .section-header {
@@ -178,6 +220,7 @@ a:hover {
    line-height: 58px;
    color: var(--link-base-color);
    padding-top: 12vh;
+   margin-bottom: ;
 }
 
 .section-subheader {
@@ -208,51 +251,62 @@ a:hover {
 .section-content-text {
    font-family: 'Open Sans', sans-serif;
    letter-spacing: 1px;
-   line-height: 33px;
+   line-height: 1.75em;
    color: var(--main-text-color);
    margin-bottom: 1.5em;
 }
 
 /* ============= SECTION: ABOUT ============= */
 #about {
-   max-width: 60%;
+   max-width: 90%;
 }
 
 /* ============= SECTION: WORK ============= */
 #work {
-   max-width: 60%;
+   max-width: 90%;
 }
 
 .work-desc-list {
-   margin-top: 0px;
+   margin-top: 0.5em;
+   margin-left: -0.85em;
+}
+
+.work-subtitle {
+   margin-top: 0.25em;
+   margin-bottom: 0.25em;
+   line-height: 1.4em;
 }
 
 .work-dates {
-   display: none;
+   display: inline;
 }
 
 /* ============= SECTION: COURSEWORK ============= */
 
 #coursework {
-   max-width: 60%;
+   max-width: 100%;
    margin-bottom: 0px;
 }
 
 .course-class-container {
    display: flex;
-   flex-wrap: nowrap;
-   flex-direction: row;
+   flex-direction: column;
+   align-items: center;
 }
 
 .course-class-col {
    flex: 100%;
-   max-width: 50%;
+   max-width: 100%;
    text-align: center;
-   margin-top: 0px;
+   margin-bottom: 2em;
 }
 
 .course-class-col-header {
    color: var(--main-subtitle-color);
+}
+
+.course-class-entry {
+   max-width: 100%
 }
 
 /* ============= SECTION: PROJECTS ============= */

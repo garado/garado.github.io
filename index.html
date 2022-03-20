@@ -7,29 +7,57 @@
    </title>
    
    <!-- Light/dark mode-->
-   <link id="theme" rel="stylesheet" type="text/css" href="css/light.css">
+   <link id="theme" rel="stylesheet" type="text/css" href="css/theme/light.css">
 
    <!-- Screen sizing -->
-   <link rel="stylesheet" type="text/css" href="css/all.css">
-   <link rel="stylesheet" type="text/css" href="css/small.css" media="(min-width: 20em)">
-   <link rel="stylesheet" type="text/css" href="css/large.css" media="(min-width: 90em)">
+   <!-- <link rel="stylesheet" type="text/css" href="css/all.css"> -->
+   <link rel="stylesheet" type="text/css" href="css/size/small.css" media="(min-width: 20em) and (max-width: 63em)">
+   <link rel="stylesheet" type="text/css" href="css/size/medium.css" media="(min-width: 64em) and (max-width: 89em)">
+   <link rel="stylesheet" type="text/css" href="css/size/large.css" media="(min-width: 90em) and (max-width: 119em)">
+   <link rel="stylesheet" type="text/css" href="css/size/extra-large.css" media="(min-width: 120em)">
+   <link rel="stylesheet" type="text/css" href="css/size/print.css" media="print">
 
-   <!-- <link rel="stylesheet" media="screen and (min-width: 300px) and (max-width: 1000px)"  type="text/css" href="css/800.css"> -->
-   <!-- <link rel="stylesheet" media="screen and (min-width: 300px) and (max-width: 1000px)"  type="text/css" href="css/800.css"> -->
-   <!-- <link rel="stylesheet" media="screen and (max-width: 1500px)" type="text/css" href="css/widescreen.css"> -->
-
+   <!-- Favicon -->
    <link rel="icon"
       href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/satellite_1f6f0.png">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="javascript/animation.js"></script>
-   <script src="javascript/navbar.js"></script>
-   <script src="javascript/darkmode.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+   <script src="javascript/landingAnimation.js"></script>
+   <script src="javascript/stickyNavbar.js"></script>
+   <script src="javascript/themeSwitch.js"></script>
+   <script src="javascript/toggleMobileNav.js"></script>
    <script src="https://unpkg.com/feather-icons"></script> <!-- open-source icons -->
    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+   <!-- Navbar -->
+   <div class="nav-wrapper" style="height: 10vh">
+      <nav id="navbar" class="navbar">
+         <!-- <a href="#top" class="navlink fade2 fadeDefault">Menu</a> -->
+         <div class="navbar-header">
+            <a href="#top">AG</a>
+            <a class="menu" onclick="toggleMobileNavbar()">
+               <i data-feather="menu"></i>
+            </a>
+         </div>
+         <div id="navlink-cont" class="isClosed" onclick="toggleMobileNavbar()">
+            <a href="#top" class=" navlink fade2 fadeDefault">Home</a>
+            <a href="#about" class=" navlink fade2 fadeDefault">About</a>
+            <a href="#work" class=" navlink fade2 fadeDefault">Experience</a>
+            <a href="#coursework" class=" navlink fade2 fadeDefault">Coursework</a>
+            <!-- <a href="#projects" class="navlink fade2 fadeDefault">Projects</a> -->
+            <a href="Garado_Alexis_Resume_3.13.22.pdf" target="_blank" class=" navlink fade2 fadeDefault">Resume</a>
+            <a id="theme-toggle-icon">
+               <button class="theme" onclick="toggleTheme()">
+                  <i id="moon" data-feather="moon" class="navlink fade2 fadeDefault lightmode themeIcon"></i>
+                  <i id="sun" data-feather="sun" class="navlink fade2 fadeDefault darkmode themeIcon"></i>
+               </button>
+            </a>
+            <a id="theme-toggle-text" class="navlink " onclick="toggleTheme()">Change theme</a>
+         </div>
+      </nav>
+   </div>
+
    <!-- Top profile section -->
    <div id="profile-section" class="flex">
       <img class="profile-pic fade1 fadeDefault" src="img/profile.jpg">
@@ -50,23 +78,6 @@
             <i class="icon fade1 fadeDefault" data-feather="github"></i>
          </a>
       </div>
-   </div>
-
-
-   <!-- Navbar -->
-   <div class="nav-wrapper" style="height: 10vh">
-      <nav id="navbar" class="navbar">
-         <a href="#top" class="navlink fade2 fadeDefault">Home</a>
-         <a href="#about" class="navlink fade2 fadeDefault hide-on-small-screens">About</a>
-         <a href="#work" class="navlink fade2 fadeDefault">Experience</a>
-         <a href="#coursework" class="navlink fade2 fadeDefault">Coursework</a>
-         <!-- <a href="#projects" class="navlink fade2 fadeDefault">Projects</a> -->
-         <a href="Garado_Alexis_Resume_3.13.22.pdf" target="_blank" class="navlink fade2 fadeDefault">Resume</a>
-         <button id="theme-toggle" class="theme">
-            <i id="moon" data-feather="moon" class="navlink fade2 fadeDefault lightmode themeIcon"></i>
-            <i id="sun" data-feather="sun" class="navlink fade2 fadeDefault darkmode themeIcon"></i>
-         </button>
-      </nav>
    </div>
 
    <!-- About -->
@@ -123,7 +134,7 @@
             </div>
             <div class="section-content-text">
                This position required mastery of the subject material as I clarified concepts taught in class and provided guidance to students completing lab assignments. I've been a tutor for various classes, including:
-               <ul>
+               <ul class="work-desc-list">
                   <li>
                      <a href="https://catalog.ucsc.edu/en/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-121" target="_blank"> 
                      CSE 121 - Embedded System Design
@@ -150,7 +161,7 @@
             </div>
             <div class="section-content-text">
                In this role, I was responsible for grading and giving feedback on students' assignments. I worked as a grader for various classes, including:
-               <ul>
+               <ul class="work-desc-list">
                   <li>
                      <a href="https://catalog.ucsc.edu/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-111" target="_blank">
                      CSE111 - Advanced Programming (C++)
@@ -165,48 +176,48 @@
                   </li>
                </ul>
             </div>
-
          </div>
-      </div> <!-- end work experience -->
 
-      <div id="coursework" class="section flex coursework">
-         <h2 class="section-header"> Coursework </div>
-         <div class="section-content-box">
-            <div class="course-class-container">
-               <div class="course-class-col">
-                  <div class="course-class-col-header">
-                     <b>Computer Science & Engineering</b>
-                  </div>
-                  <div class="course-class-col-entries">
-                     <div class="course-class-entry">Advanced VLSI design (Graduate)</div>
-                     <div class="course-class-entry">Computer Architecture (Graduate)</div>
-                     <div class="course-class-entry">Embedded System Design</div>
-                     <div class="course-class-entry">Embedded Systems & C Programming</div>
-                     <div class="course-class-entry">Advanced Programming (C++)</div>
-                     <div class="course-class-entry">Data Structures and Algorithms</div>
-                     <div class="course-class-entry">Comp Systems & Assembly Language</div>
-                     <div class="course-class-entry">Logic Design</div>
-                     <div class="course-class-entry">Logic Design with Verilog</div>
-                  </div>
-               </div> <!-- end first col -->
-               <div class="course-class-col">
-                  <div class="course-class-col-header">
-                     <b>Math, Physics, & Electrical Engineering</b>
-                  </div>
-                  <div class="course-class-col-entries">
-                     <div class="course-class-entry">Calculus I, II, III</div>
-                     <div class="course-class-entry">Applied Discrete Mathematics</div>
-                     <div class="course-class-entry">Linear Algebra</div>
-                     <div class="course-class-entry">Classical Mechanics</div>
-                     <div class="course-class-entry">Statics & Mechanics of Materials</div>
-                     <div class="course-class-entry">Electricity & Magnetism</div>
-                     <div class="course-class-entry">Intro to Electronic Circuits</div>
-                     <div class="course-class-entry">Signals and Systems</div>
-                  </div>
-               </div> <!-- end second col -->
-            </div> <!-- end course class container -->
-         </div> <!-- end section content box -->
       </div>
+   </div> <!-- end work experience -->
+
+   <div id="coursework" class="section flex coursework">
+      <h2 class="section-header"> Coursework </h2>
+      <div class="section-content-box">
+         <div class="course-class-container">
+            <div class="course-class-col">
+               <div class="course-class-col-header">
+                  <b>Computer Science & Engineering</b>
+               </div>
+               <div class="course-class-col-entries">
+                  <div class="course-class-entry">Advanced VLSI Design (Graduate)</div>
+                  <div class="course-class-entry">Computer Architecture (Graduate)</div>
+                  <div class="course-class-entry">Embedded System Design</div>
+                  <div class="course-class-entry">Embedded Systems & C Programming</div>
+                  <div class="course-class-entry">Advanced Programming (C++)</div>
+                  <div class="course-class-entry">Data Structures and Algorithms</div>
+                  <div class="course-class-entry">Comp Systems & Assembly Language</div>
+                  <div class="course-class-entry">Logic Design</div>
+                  <div class="course-class-entry">Logic Design with Verilog</div>
+               </div>
+            </div> <!-- end first col -->
+            <div class="course-class-col">
+               <div class="course-class-col-header">
+                  <b>Math, Physics, & Electrical Engineering</b>
+               </div>
+               <div class="course-class-col-entries">
+                  <div class="course-class-entry">Calculus I, II, III</div>
+                  <div class="course-class-entry">Applied Discrete Mathematics</div>
+                  <div class="course-class-entry">Linear Algebra</div>
+                  <div class="course-class-entry">Classical Mechanics</div>
+                  <div class="course-class-entry">Statics & Mechanics of Materials</div>
+                  <div class="course-class-entry">Electricity & Magnetism</div>
+                  <div class="course-class-entry">Intro to Electronic Circuits</div>
+                  <div class="course-class-entry">Signals and Systems</div>
+               </div>
+            </div> <!-- end second col -->
+         </div> <!-- end course class container -->
+      </div> <!-- end section content box -->
    </div> <!-- end coursework -->
 
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

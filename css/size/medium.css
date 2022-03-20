@@ -12,6 +12,7 @@ body {
    flex-direction: column;
    justify-content: center;
    text-align: center;
+   align-items: flex-start;
    margin: auto;
    font-family: 'Open Sans', sans-serif;
    line-height: 36px;
@@ -31,6 +32,16 @@ body {
 
 /* ============= NAVBAR ============= */
 
+/* On large screens, navbar should be below profile pic */
+.nav-wrapper {
+   order: 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+}
+
+/* Basic navbar settings */
 nav {
    position: sticky;
    width: 100%;
@@ -44,7 +55,6 @@ nav {
 }
 
 /* Makes navbar sticky after scrolling down far enough */
-
 .navbar-fixed-top {
    background-color: var(--main-bg-color);
    position: fixed;
@@ -52,10 +62,37 @@ nav {
    box-shadow: rgb(36 41 51 / 15%) 0px 5px 10px 0;
 }
 
+/* Navlink container settings */
+.navlink-cont {
+   width: 100%;
+   display: block;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Navlink settings */
 .navlink {
    color: var(--main-text-color);
    margin: 0 1em;
    transition: all 0.2s;
+}
+
+/* Change theme icon cursor */
+#theme-toggle-icon {
+   cursor: pointer;
+}
+
+/* Hide elements meant for smaller screens */
+.navbar-header a.menu {
+   display: none;
+}
+#theme-toggle-text {
+   display: none;
+}
+.navbar-header {
+   display: none;
 }
 
 /* ============= THEME BUTTON SETTINGS ============= */
@@ -112,6 +149,7 @@ a:hover {
    margin: 0 auto;
    align-items: center;
    max-width: 60%;
+   order: 1;
 }
 
 .profile-name {
@@ -126,7 +164,7 @@ a:hover {
 
 .profile-pic {
    border-radius: 100%;
-   max-width: 80%;
+   max-width: 20%;
 }
 
 /* Tiny description below my name */
@@ -163,7 +201,7 @@ a:hover {
 
 .section {
    margin: 5vh auto;
-   max-width: 100%;
+   max-width: 80%;
 }
 
 .section-header {
@@ -173,7 +211,6 @@ a:hover {
    line-height: 58px;
    color: var(--link-base-color);
    padding-top: 12vh;
-   margin-bottom: ;
 }
 
 .section-subheader {
@@ -204,61 +241,58 @@ a:hover {
 .section-content-text {
    font-family: 'Open Sans', sans-serif;
    letter-spacing: 1px;
-   line-height: 1.75em;
+   line-height: 33px;
    color: var(--main-text-color);
    margin-bottom: 1.5em;
 }
 
 /* ============= SECTION: ABOUT ============= */
 #about {
-   max-width: 90%;
+   max-width: 60%;
+   order: 3;
 }
 
 /* ============= SECTION: WORK ============= */
 #work {
-   max-width: 90%;
+   order: 4;
+   max-width: 60%;
 }
 
 .work-desc-list {
-   margin-top: 0.5em;
-   margin-left: -0.85em;
+   margin-top: 0px;
 }
 
 .work-subtitle {
-   margin-top: 0.25em;
-   line-height: 1.25em;
+   margin-bottom: 0.25em;
 }
 
 .work-dates {
-   display: inline;
+   display: none;
 }
 
 /* ============= SECTION: COURSEWORK ============= */
 
 #coursework {
-   max-width: 100%;
+   order: 5;
+   max-width: 60%;
    margin-bottom: 0px;
 }
 
 .course-class-container {
    display: flex;
-   flex-direction: column;
-   align-items: center;
+   flex-wrap: nowrap;
+   flex-direction: row;
 }
 
 .course-class-col {
    flex: 100%;
-   max-width: 100%;
+   max-width: 50%;
    text-align: center;
-   margin-bottom: 2em;
+   margin-top: 0px;
 }
 
 .course-class-col-header {
    color: var(--main-subtitle-color);
-}
-
-.course-class-entry {
-   max-width: 100%
 }
 
 /* ============= SECTION: PROJECTS ============= */
