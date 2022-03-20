@@ -368,29 +368,3 @@ a:hover {
    width: 90%;
    display: flex;
 }
-
-/* ============= COMPATIBILITY ============= */
-
-@media screen and (max-width: 450px) {
-   a:hover {
-      color: #2E2E2E
-   }
-   ;
-   .profile-name {
-      line-height: 45px;
-   }
-   .profile-pic {
-      max-width: 65%;
-   }
-   .profile-social img:hover {
-      height: 1.5em;
-   }
-   .section-content {
-      max-width: 85%
-   }
-   .navbar a.hide-on-small-screens {
-      display: none;
-   }
-}
-
-/* Need to fix for galaxy fold, iphone5/se, ipad/pro */
