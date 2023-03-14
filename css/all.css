@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap');
-
 /* i am by no means a web developer, nor do i intend to be one */
 /* so please don't judge my trash CSS too harshly */
 
@@ -34,7 +33,7 @@ body {
 nav {
    position: sticky;
    width: 100%;
-   height: 10vh;
+   height: 7vh;
    display: flex;
    flex-direction: row;
    justify-content: center;
