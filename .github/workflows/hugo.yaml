@@ -54,6 +54,8 @@ jobs:
           node-version: '16'
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Install Node.js dependencies... again?
+        run: npm install
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
