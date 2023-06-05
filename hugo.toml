@@ -72,16 +72,16 @@ DefaultContentLanguage           = "en"                    # Default language fo
     weight  = 1
 [[menu.main]]
     name    = "About"
-    url     = "/about/"
+    url     = "/about"
     weight  = 2
 [[menu.main]]
     name    = "Projects"
-    url     = "/projects/"
+    url     = "/projects"
     weight  = 3
-# [[menu.main]]
-#     name    = "Posts"
-#     url     = "/blog/"
-#     weight  = 4
+[[menu.main]]
+    name    = "Posts"
+    url     = "/blog"
+    weight  = 4
 [[menu.main]]
     name    = "Resume"
     url     = "https://resume.garado.dev"
