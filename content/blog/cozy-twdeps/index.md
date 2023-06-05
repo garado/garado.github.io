@@ -1,8 +1,7 @@
 ---
 title: "Goals visualization with TaskWarrior + Graphviz"
-date: 2022-02-20T12:04:16-05:00
+date: 2023-06-04T12:04:16-05:00
 series: ["cozy"]
-summary: "asdfsadf"
 ---
 
 A big part of my dashboard is making tools specifically tailored for my workflow. In this case, I wanted a way to keep track of my goals and view them at a glance. Initially I tried to write my own CLI goals tracking program in Go, but then I realized I could use dependencies in TaskWarrior to do it. I also discovered [twdeps](https://github.com/nerab/twdeps/), which could generate a graph from a set of interdependent tasks using [Graphviz](https://graphviz.org/)!
