@@ -120,3 +120,4 @@ DefaultContentLanguage           = "en"                    # Default language fo
         [languages.en.params]
             description  = "Alexis Garado's personal website."   # Max 160 characters show in search results
             # footerText   = "Footer text"                      # Text to override default footer text (markdown allowed)
+            footerText   = "<small>&copy; 2023 Alexis Garado"
