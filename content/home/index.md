@@ -1,6 +1,6 @@
 ---
 title: "Alexis Garado"
-image: "pfp.png"
+image: "me.png"
 ---
 
 Embedded systems engineer.
