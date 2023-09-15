@@ -2,7 +2,7 @@
 title: "The desktop tour"
 date: 2023-09-07T12:04:16-05:00
 reries: ["cozy", "awm"]
-draft: false
+draft: true
 ---
 
 When I have free time, I spend a *lot* of it customizing my desktop. You might think that consists of just cherry-picking some colors and fonts that look nice, but it's so much more than that. It's about using (and borderline abusing) AwesomeWM's API to create perfect tools for a perfect workflow that's tailor-made for me.
@@ -16,22 +16,22 @@ You can read about my desktop progression below or just [skip to the good stuff.
 
 (Looking back, this is kind of the best-looking one... time to implement this in AWM?)
 
-<div class="flex justify-center"> <img width=700 src="./windows.png"> </div>
+![<img:windows>](./windows.png)
 
 **Late 2021.** Eventually I decided to take the Linux plunge and jumped straight into Arch/bspwm/Polybar. No pictures of that era unfortunately, but I know retrospectively it looked awful, so there's not much lost.
 
 **Early 2022.** Polybar was an incredible pain to configure, so I migrated to the Eww setup below.
 
-<div class="flex justify-center"> <img width=700 src="./eww.png"> </div>
+![<img: eww>](./eww.png)
 
 **Mid 2022.** As I got more comfortable with Eww, I also started getting more creative. This was the first iteration of the dashboard. It's... rough.
 
-<div class="flex justify-center"> <img width=700 src="./eww-dashboard.png"> </div>
+![<img: eww-dashboard>](./eww-dashboard.png)
 
 **Late 2022.** By this point I had become a die-hard nvim user and interacting with the dashboard with my mouse was getting annoying. I couldn't see any easy way to implement keyboard navigation within Eww, so I left for Awesome. I learned Lua, developed the [keynav library](https://www.github.com/garado/awesome-keynav) (invent the tools to make things possible!), and ended up with this.
 
-<div class="flex justify-center"> <img width=700 src="./awm-late-2022_01.png"> </div>
-<div class="flex justify-center"> <img width=700 src="./awm-late-2022_02.png"> </div>
+![<img:awm late 2022 1>](./awm-late-2022_01.png)
+![<img:awm late 2022 2>](./awm-late-2022_02.png)
 
 And that brings us to today.
 
