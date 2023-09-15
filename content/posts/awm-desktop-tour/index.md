@@ -1,13 +1,13 @@
 ---
 title: "The desktop tour"
 date: 2023-09-07T12:04:16-05:00
-reries: ["cozy", "awm"]
+categories: ["cozy", "awesomeWM"]
 draft: true
 ---
 
 When I have free time, I spend a *lot* of it customizing my desktop. You might think that consists of just cherry-picking some colors and fonts that look nice, but it's so much more than that. It's about using (and borderline abusing) AwesomeWM's API to create perfect tools for a perfect workflow that's tailor-made for me.
 
-AwesomeWM, if you're unfamiliar, is a window manager with a built-in UI framework and is configured in Lua. It's incredibly powerful and there hasn't been a single idea that I couldn't implement with it without enough finagling. It embodies both of my favorite things about coding: one, anything is possible; and two, if something isn't, it's because the right tool hasn't been invented yet.
+AwesomeWM, if you're unfamiliar, is a window manager with a built-in UI framework and is configured in Lua. It's incredibly powerful and there hasn't been a single idea that I couldn't implement with enough finagling. It embodies both of my favorite things about coding: one, anything is possible; and two, if it isn't, it's because the right tool hasn't been invented yet.
 
 You can read about my desktop progression below or just [skip to the good stuff.](#the-actual-tour)
 
