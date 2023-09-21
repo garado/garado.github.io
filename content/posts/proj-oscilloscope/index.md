@@ -1,6 +1,7 @@
 ---
-title: TinyScope
+title: "TinyScope: A tiny oscilloscope"
 date: 2021-06-15
+categories: ["projects", "embedded"]
 ---
 
 # Overview
