@@ -1,3 +1,3 @@
 # garado.github.io
 
-Personal website made with [Hugo static site generator](https://gohugo.io/) using custom fork of [victoriadrake's Introduction theme.](https://github.com/victoriadrake/hugo-theme-introduction) with minor modifications to suit my aesthetic.
+Personal website made with [Hugo static site generator](https://gohugo.io/).
