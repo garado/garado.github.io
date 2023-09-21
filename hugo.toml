@@ -1,7 +1,7 @@
 baseURL = 'https://garado.dev'
 languageCode = 'en-us'
 title = 'Alexis Garado'
-theme = 'hugo-keepit'
+theme = ['hugo-video', 'hugo-keepit']
 
 paginate = 12
 enableEmoji = true
@@ -37,6 +37,11 @@ disqusShortname = ""
     name = "About"
     url = "/about"
     weight = 4
+  
+  [[menu.main]]
+    name = "Resume"
+    url = "https://resume.garado.dev/"
+    weight = 5
 
 [params]
     since = 2022
@@ -58,7 +63,7 @@ disqusShortname = ""
     description = "" # site description
     keywords = "" # site keywords
 
-    license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    # license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
     defaultPage = "/"
 
 [params.gravatar]
@@ -68,9 +73,9 @@ disqusShortname = ""
 [params.social]
     GitHub = "garado"
     Linkedin = "garado"
+    Email  = "alexisgarado@gmail.com"
     #Twitter = "xxxx"
     #Instagram = "xxxx"
-    #Email   = "xxxx"
     # Facebook = "xxxx"
     #Telegram = "xxxx"
     #Medium = "xxxx"
@@ -124,18 +129,18 @@ disqusShortname = ""
     #Mastodon = "xxxx"
     #Thingiverse = "xxxx"
 
-[params.share]
-#Twitter = true
-#Facebook = true
-#Reddit = true
-Linkedin = true
-#Pinterest = true
-#HackerNews = true
-#Mix = true
-#Tumblr = true
-#VKontakte = true
-#Douban = true
-#Weibo = true
+#[params.share]
+  #Twitter = true
+  #Facebook = true
+  #Reddit = true
+  #Linkedin = true
+  #Pinterest = true
+  #HackerNews = true
+  #Mix = true
+  #Tumblr = true
+  #VKontakte = true
+  #Douban = true
+  #Weibo = true
 
 # Used only for Seo schema
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."

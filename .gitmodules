@@ -4,3 +4,6 @@
 [submodule "themes/hugo-keepit"]
 	path = themes/hugo-keepit
 	url = git@github.com:garado/hugo-keepit.git
+[submodule "themes/hugo-video"]
+	path = themes/hugo-video
+	url = https://github.com/martignoni/hugo-video.git
