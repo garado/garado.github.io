@@ -7,3 +7,9 @@
 [submodule "themes/hugo-video"]
 	path = themes/hugo-video
 	url = https://github.com/martignoni/hugo-video.git
+[submodule "themes/lightGallery"]
+	path = themes/lightGallery
+	url = https://github.com/sachinchoolur/lightGallery.git
+[submodule "themes/themes/baguettebox"]
+	path = themes/themes/baguettebox
+	url = https://github.com/Schnouki/hugo-baguetteBox
