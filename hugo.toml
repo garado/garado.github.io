@@ -9,6 +9,11 @@ enableRobotsTXT = true
 googleAnalytics = ""
 disqusShortname = ""
 
+# Needed for mermaid/katex shortcodes
+[markup]
+[markup.goldmark.renderer]
+  unsafe = true
+
 [sitemap]
   changefreq = "monthly"
   filename = "sitemap.xml"
@@ -46,7 +51,7 @@ disqusShortname = ""
 [params]
     since = 2022
     author = "Alexis Garado" # Author's name
-    subtitle = "Embedded software engineer"       # Subtitle
+    subtitle = "Embedded software engineer and maker of cool stuff"       # Subtitle
     cdn_url = ""           # Base CDN URL
     home_mode = "" # post or other
     dateFormatToUse = "" # set date format, default "2 January 2006"
