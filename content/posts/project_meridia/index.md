@@ -2,6 +2,7 @@
 title: "A NEW HAND TOUCHES THE BEACON."
 date: 2023-09-22
 categories: ["projects", "embedded"]
+draft: true
 ---
 
 *Listen. Hear me and obey. A foul darkness has seeped into my temple. A darkness that you will destroy.*
