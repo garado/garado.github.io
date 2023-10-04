@@ -1,7 +1,7 @@
 ---
 title: "TinyScope: A tiny oscilloscope"
 date: 2021-06-15
-categories: ["projects", "embedded"]
+categories: ["projects"]
 ---
 
 # Overview
@@ -106,6 +106,11 @@ The readings become incredibly noisy at low frequencies with low x-scale setting
 
 
 This allowed my frequency calculations to become extremely accurate regardless of the x-scale setting or the actual frequency used. I was proud of this :)
+
+#### Miscellaneous
+I finished the project a little early and had time to have fun. I figured out how to display bitmap images and made a cool splash screen.
+
+![Splash!](./splash.jpg)
 
 # Testing
 While working on this project, incremental design was key. I rigorously tested each step before moving on to the next in order to isolate the source of any errors.
