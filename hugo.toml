@@ -1,7 +1,7 @@
 baseURL = 'https://garado.dev'
 languageCode = 'en-us'
 title = 'Alexis Garado'
-theme = ['hugo-video', 'hugo-keepit']
+theme = 'hugo-keepit'
 
 paginate = 12
 enableEmoji = true
@@ -11,6 +11,10 @@ disqusShortname = ""
 
 # Needed for mermaid/katex shortcodes
 [markup]
+[markup.highlight]
+  style = "nord"
+  tabWidth = 2 
+  lineNos = "false"
 [markup.goldmark.renderer]
   unsafe = true
 
@@ -33,10 +37,10 @@ disqusShortname = ""
     url = "/posts/"
     weight = 1
 
-  [[menu.main]]
-    name = "Categories"
-    url = "/categories/"
-    weight = 3
+  # [[menu.main]]
+  #   name = "Categories"
+  #   url = "/categories/"
+  #   weight = 3
 
   [[menu.main]]
     name = "About"
@@ -51,7 +55,7 @@ disqusShortname = ""
 [params]
     since = 2022
     author = "Alexis Garado" # Author's name
-    subtitle = "Embedded software engineer and maker of cool stuff"       # Subtitle
+    subtitle = "Embedded software engineer" # Subtitle
     cdn_url = ""           # Base CDN URL
     home_mode = "" # post or other
     dateFormatToUse = "" # set date format, default "2 January 2006"
