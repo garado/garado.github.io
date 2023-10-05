@@ -7,7 +7,7 @@ draft: true
 
 When I have free time, I spend a *lot* of it customizing my desktop. You might think that consists of just cherry-picking some colors and fonts that look nice, but it's so much more than that. It's about using (and borderline abusing) AwesomeWM's API to create perfect tools for a perfect workflow that's tailor-made for me.
 
-AwesomeWM, if you're unfamiliar, is a window manager with a built-in UI framework and is configured in Lua. It's incredibly powerful and customizable, and there hasn't been a single idea that I couldn't implement with enough hard work. It embodies both of my favorite things about coding: one, anything is possible; and two, if it isn't, it's because the right tool hasn't been invented yet.
+AwesomeWM, if you're unfamiliar, is a window manager with a built-in UI framework configured in Lua. It's incredibly powerful and customizable, and there hasn't been a single idea that I couldn't implement with enough hard work. It embodies both of my favorite things about coding: one, anything is possible; and two, if it isn't, it's because the right tool hasn't been invented yet.
 
 # Taskwarrior
 I've tried dozens of task managers in my life. Dozens. None of them have ever worked as well as Taskwarrior. And despite how much I love the command line, I definitely need a solid GUI when I'm working with a to-do list. [taskwarrior-tui](https://github.com/kdheepak/taskwarrior-tui) isn't organized in a way that works with how I personally use Taskwarrior, and a polished Taskwarrior GUI just doesn't exist - or rather, it didn't exist. I made one!
