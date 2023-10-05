@@ -1,203 +1,71 @@
-baseURL = 'https://garado.dev'
-languageCode = 'en-us'
-title = 'Alexis Garado'
-theme = 'hugo-keepit'
+baseurl = "http://garado.dev"
+title = "Alexis Garado"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
 
-paginate = 12
-enableEmoji = true
-enableRobotsTXT = true
-googleAnalytics = ""
+paginate = 20
+
 disqusShortname = ""
 
-# Needed for mermaid/katex shortcodes
-[markup]
 [markup.highlight]
-  style = "nord"
-  tabWidth = 2 
-  lineNos = "false"
-[markup.goldmark.renderer]
-  unsafe = true
-
-[sitemap]
-  changefreq = "monthly"
-  filename = "sitemap.xml"
-  priority = 0.5
-
-[blackfriday]
-  hrefTargetBlank = true
-  nofollowLinks = true
-  noreferrerLinks = true
-
-[Permalinks]
- posts = "/:year/:filename/"
-
-[menu]
-  [[menu.main]]
-    name = "Posts"
-    url = "/posts/"
-    weight = 1
-
-  # [[menu.main]]
-  #   name = "Categories"
-  #   url = "/categories/"
-  #   weight = 3
-
-  [[menu.main]]
-    name = "About"
-    url = "/about"
-    weight = 4
-  
-  [[menu.main]]
-    name = "Resume"
-    url = "https://resume.garado.dev/"
-    weight = 5
+style = "github-dark"
 
 [params]
-    since = 2022
-    author = "Alexis Garado" # Author's name
-    subtitle = "Embedded software engineer" # Subtitle
-    cdn_url = ""           # Base CDN URL
-    home_mode = "" # post or other
-    dateFormatToUse = "" # set date format, default "2 January 2006"
-    
-    google_verification = ""
-    bing_verification = ""
-    yandex_verification = ""
-    pinterest_verification = ""
-    baidu_verification = ""
+  author = "Alexis Garado"
+  info = "Embedded software engineer"
+  description = "Alexis Garado's personal website"
+  keywords = "blog,developer,personal"
+  gravatar = "alexisgarado@gmail.com"
 
-    # avatar = "/images/me/avatar.jpeg" #comment it to use gravatar
-    socialShare = false
+  faviconSVG = "/img/favicon.svg"
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
 
-    description = "" # site description
-    keywords = "" # site keywords
+  since = 2021
 
-    # license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-    defaultPage = "/"
+  enableTwemoji = false
 
-[params.gravatar]
-    email = "alexisgarado@gmail.com"   #uncomment and insert your email address to use gravatar
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
 
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
 
-[params.social]
-    GitHub = "garado"
-    Linkedin = "garado"
-    Email  = "alexisgarado@gmail.com"
-    #Twitter = "xxxx"
-    #Instagram = "xxxx"
-    # Facebook = "xxxx"
-    #Telegram = "xxxx"
-    #Medium = "xxxx"
-    #Gitlab = "xxxx"
-    #Youtubelegacy = "xxxx"
-    #Youtubecustom = "xxxx"
-    #Youtubechannel = "xxxx"
-    #Tumblr ="xxxx"
-    #Quora = "xxxx"
-    #Keybase = "xxxx"
-    #Pinterest = "xxxx"
-    #Reddit = "xxxx"
-    #Codepen = "xxxx"
-    #Bitbucket = "xxxx"
-    #Stackoverflow = "xxxxx"
-    #Weibo = "xxxx"
-    #Odnoklassniki = "xxxx"
-    #VKontakte = "xxxx"
-    #Flickr = "xxxx"
-    #Xing = "xxxx"
-    #Snapchat = "xxxx"
-    #Soundcloud = "xxxx"
-    #Spotify = "xxxx"
-    #Bandcamp = "xxxx"
-    #Paypal = "xxxx"
-    #Fivehundredpx = "xxxx"
-    #Mix = "xxxx"
-    #Goodreads = "xxxx"
-    #Lastfm = "xxxx"
-    #Foursquare = "xxxx"
-    #Hackernews = "xxxx"
-    #Kickstarter = "xxxx"
-    #Patreon = "xxxx"
-    #Steam = "xxxx"
-    #Twitch = "xxxx"
-    #Strava = "xxxx"
-    #Skype = "xxxx"
-    #Whatsapp = "xxxx"
-    #Zhihu = "xxxx"
-    #Douban = "xxxx"
-    #Angellist = "xxxx"
-    #Slidershare = "xxxx"
-    #Jsfiddle = "xxxx"
-    #Deviantart = "xxxx"
-    #Behance = "xxxx"
-    #Dribble = "xxxx"
-    #Wordpress = "xxxx"
-    #Vine = "xxxx"
-    #Googlescholar = "xxxx"
-    #Researchgate = "xxxx"
-    #Mastodon = "xxxx"
-    #Thingiverse = "xxxx"
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
 
-#[params.share]
-  #Twitter = true
-  #Facebook = true
-  #Reddit = true
-  #Linkedin = true
-  #Pinterest = true
-  #HackerNews = true
-  #Mix = true
-  #Tumblr = true
-  #VKontakte = true
-  #Douban = true
-  #Weibo = true
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/garado/"
+[[params.social]]
+  name = "Email"
+  icon = "fa fa-envelope fa-2x"
+  weight = 2
+  url = "mailto:alexisgarado@gmail.com"
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa fa-linkedin fa-2x"
+  weight = 3
+  url = "https://linkedin.com/in/garado"
 
-# Used only for Seo schema
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-
-[author]
-  name = "Fastbyte01"
-
-  [params.publisher]
-    name = "Fastbyte01"
-
-    [params.publisher.logo]
-      url = "logo.png"
-      width = 127
-      height = 40
-
-  [params.logo]
-    url = "logo.png"
-    width = 127
-    height = 40
-
-  [params.image]
-    url = "cover.png"
-    width = 800
-    height = 600
-
-[params.gitalk]
-owner = ""       # Your GitHub ID
-repo = ""        # The repo to store comments
-clientId = ""    # Your client ID
-clientSecret = "" # Your client secret
-
-[params.valine]
-  enable = false
-  language = 'en'
-  appId = 'your appId'
-  appKey = 'your appKey'
-  notify = false  # mail notifier , https://github.com/xCss/Valine/wiki
-  verify = false # Verification code
-  avatar = 'mm'
-  placeholder = 'your comments ...'
-  visitor = true
-
-[params.utterances]       # https://utteranc.es/
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
-
-[params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
-    clientId = ""           # Your client ID
-    clientSecret = ""       # Your client secret
+# Menu links
+[[menu.main]]
+  name = "Posts"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"
+[[menu.main]]
+  name = "Resume"
+  weight = 2
+  url = "https://resume.garado.dev/"

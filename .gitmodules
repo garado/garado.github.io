@@ -13,3 +13,6 @@
 [submodule "themes/themes/baguettebox"]
 	path = themes/themes/baguettebox
 	url = https://github.com/Schnouki/hugo-baguetteBox
+[submodule "themes/hugo-coder"]
+	path = themes/hugo-coder
+	url = git@github.com:garado/hugo-coder.git
