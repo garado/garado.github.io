@@ -1,5 +1,6 @@
 ---
 title: "Micro servo robotic arm"
+categories: ["projects"]
 date: 2023-10-01
 ---
 
