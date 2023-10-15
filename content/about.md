@@ -4,7 +4,7 @@ title: About
 
 Hello there!
 
-I’m Alexis, a recent graduate of UC Santa Cruz with a B.S. in Computer Engineering. I’m passionate about Linux (Arch btw), embedded systems, computer architecture, and robotics, and I'm at my best when there's an interesting problem to solve or when I'm learning cool new things. I’m currently searching for a full-time role in embedded software development.
+I’m Alexis, a recent graduate of UC Santa Cruz with a B.S. in Computer Engineering. I like figuring out how things work, solving problems, and above all, learning as much as I can. I’m passionate about Linux (Arch btw), embedded systems, and computer architecture, and I'll be working as an embedded firmware engineer at [Supernal](https://supernal.aero/) starting in November.
 
 In my free time, I’m probably playing guitar, messing with a microcontroller, or (most likely) spending way too much time tinkering with my AwesomeWM config.
 
