@@ -1,5 +1,5 @@
 baseurl = "http://garado.dev"
-title = "Alexis Garado"
+title = "garado.dev"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
