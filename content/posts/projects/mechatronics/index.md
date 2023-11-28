@@ -2,7 +2,6 @@
 title: "The Money Machine: An autonomous robot"
 date: 2022-12-15
 categories: ["projects"]
-draft: true
 ---
 
 # Overview
