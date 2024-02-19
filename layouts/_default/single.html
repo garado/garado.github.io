@@ -1,0 +1,18 @@
+{{- define "content" -}}
+
+<h1>{{ .Title }}</h1>
+{{ time.Format "2 January 2006" .Date }}
+
+{{ if and (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") (.Scratch.Get "params").enable_toc }}
+    {{ $enable_collapsible_toc := (.Scratch.Get "params").enable_collapsible_toc }}
+    {{ partial "collapsible-menu.html" (dict "type" "toc" "context" . "enable" $enable_collapsible_toc) }}
+{{ end }}
+
+{{ if .Content }}
+    <div class="content-margin">
+        {{- partial "content.html" (dict "ctx" . "content" .Content) -}}
+    </div>
+{{ end }}
+
+{{- end -}}
+

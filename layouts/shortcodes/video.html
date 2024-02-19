@@ -65,6 +65,6 @@
   {{- end }}
   <span>{{ i18n "videoUnsupported" $video_dl | safeHTML}}</span>
 </video>
-{{ with .Get "caption" }}<figcaption><p>{{ . }}</p></figcaption>{{ end }}
+  {{ with .Get "caption" }}<figcaption><p><i>{{ . }}</i></p></figcaption>{{ end }}
 </figure>
 {{- end -}}

@@ -13,7 +13,7 @@ enable_open_graph = true
 enable_twitter_cards = true
 
 # Collapsible Menu
-enable_collapsible_toc = false
+enable_collapsible_toc = true
 enable_collapsible_changelogs = true
 
 [list_layout]
