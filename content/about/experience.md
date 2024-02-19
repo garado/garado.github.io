@@ -18,7 +18,7 @@ weight: 2
 ### University of California, Santa Cruz (Sep 2018 - Mar 2023)
 I was a tutor/grader for several courses at UCSC. The courses and their descriptions are listed below.
 
-**Logic Design with Verilog - [CSE125/L](https://courses.engineering.ucsc.edu/courses/cse125)**
+**Logic Design with Verilog Grader - [CSE125/L](https://courses.engineering.ucsc.edu/courses/cse125)**
 - Verilog digital logic design with emphasis on ASIC and FPGA design. Students design and verify large-scale systems. Assignments and project use the Verilog Hardware Description Language with emphasis on verification and high-frequency ASIC/FPGA targets.
 
 **Logic Design Tutor - [CSE100/L](https://courses.engineering.ucsc.edu/courses/cse100)**
