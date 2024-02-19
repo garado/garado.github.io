@@ -1,0 +1,16 @@
+baseURL = "https://garado.dev"
+languageCode = "en"
+title = "Alexis Garado"
+theme = "monochrome"
+defaultContentLanguage = "en"
+enableEmoji = true
+paginate = 5
+enableGitInfo = true
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
