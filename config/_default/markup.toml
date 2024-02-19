@@ -1,5 +1,5 @@
 [goldmark.renderer]
-unsafe= true
+unsafe = true
 
 [highlight]
 anchorLineNos = false
