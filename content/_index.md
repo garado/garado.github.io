@@ -8,4 +8,4 @@ balloon_resources: "/about"
 ---
 
 # Hello!
-I'm Alexis, a recent graduate of UC Santa Cruz with a B.S. in Computer Engineering. I like figuring out how things work, solving problems, and above all, learning as much as I can. I’m passionate about Linux (Arch btw), embedded systems, computer architecture, and robotics. I work on energy storage systems for electric aircraft at [Supernal](https://www.supernal.aero/). I enjoy my work and I'm happy to accelerate the world's transition to sustainable energy.
+I'm Alexis, a software engineer at [Supernal](https://supernal.aero) working on energy storage systems for electric aircraft. I like figuring out how things work, solving problems, and above all, learning as much as I can. I’m passionate about Linux (Arch btw), embedded systems, computer architecture, and robotics. In my free time I'm probably messing with a microcontroller or playing guitar.
