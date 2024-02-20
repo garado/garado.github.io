@@ -1,5 +1,5 @@
 ---
-title: "Posts"
 draft: true
+cascade:
+  draft: true
 ---
-

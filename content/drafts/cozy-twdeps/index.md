@@ -1,6 +1,6 @@
 ---
 title: "Goals visualization with TaskWarrior + Graphviz"
-date: 2023-06-04T12:04:16-05:00
+date: 2021-06-04
 categories: ["awesomeWM"]
 ---
 
