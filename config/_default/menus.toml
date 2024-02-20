@@ -3,13 +3,21 @@
   name = "Github"
   url = "https://github.com/garado"
   weight = 1
+
 [[navbar]]
   identifier = "linkedin"
   name = "LinkedIn"
   url = "https://linkedin.com/in/garado"
   weight = 2
+
 [[navbar]]
   identifier = "posts"
   name = "Posts"
   url = "/posts"
   weight = 2
+
+[[navbar]]
+  identifier = "now"
+  name = "Now"
+  url = "/now"
+  weight = 3
